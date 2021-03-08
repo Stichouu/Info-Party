@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "liste.h"
+#include "joueur.h"
+#include "partie.h"
 
-extern t_case * drapeau;
-extern t_case * ec;
 
 
 int main(){
@@ -12,33 +12,34 @@ int main(){
   crea_plat();
   int i,nb_choix;
 
-  for(i=0;i<NB_CASE && !hors_liste(); i++){
+  for(i=0;i<NB_CASE && !hors_liste_plat(); i++){
     printf("effet case %i: %i\n",ec->nb_case,ec->effet);
-    suivant();
+    suivant_plat();
   }
 
-  /* position de départ et initialisation des joueur*/
-  t_joueur * j1;
-  en_tete();
-  j1=malloc(sizeof(t_joueur));
-  j1->position=ec;
-  j1->nb_pieces=0;
-  j1->nb_badges=0;
+  une_partie(NB_TOURS);
+  printf("coucou");
 
+  printf("%i",liste_joueurs[2]->num_joueur);
+
+/*  for(i=0; i<NB_JOUEURS; i++){
+    printf("joueur %i : est sur la case %i.\n",liste_joueurs[i]->num_joueur, liste_joueurs[i]->position->nb_case);
+    printf("Il a %i pièces et %i badges.\n",liste_joueurs[i]->nb_pieces, liste_joueurs[i]->nb_badges);
+  }*/
   /* parcours du plateau */
-  printf("choisissez un nombre \n");
+  /*printf("choisissez un nombre \n");
   scanf("%i",&nb_choix);
   for(i=0; i<nb_choix; i++){
-    suivant();
-    if(hors_liste()){
+    suivant_plat();
+    if(hors_liste_plat()){
       en_tete();
     }
     j1->position=ec;
   }
-  printf("Vous êtes sur la case %i qui a pour effet: %i\n",j1->position->nb_case,j1->position->effet);
+  printf("Vous êtes sur la case %i qui a pour effet: %i\n",j1->position->nb_case,j1->position->effet); */
 
   /* effet case */
-  switch(j1->position->effet){
+/*  switch(j1->position->effet){
     case 0: printf("Vous êtes sur la case de départ\n");
             break;
     case 1: printf("Vous êtes sur une case bleu, vous gagnez 3 pièces\n");
@@ -57,7 +58,6 @@ int main(){
             break;
     case 5: printf("Vous êtes sur une case méchante\n");
             break;
-  }
-
+  } */
   return 0;
 }

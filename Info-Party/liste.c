@@ -2,62 +2,60 @@
 #include <stdlib.h>
 #include "liste.h"
 
-extern t_case * drapeau;
-extern t_case * ec;
 
 
 
 /* Mise en place par pointeurs des primitives d'accès à une liste */
 
-void init_list(){
+void init_list_plat(){
   drapeau = malloc(sizeof(t_case));
   drapeau->preced = drapeau;
   drapeau->suiv = drapeau;
   ec = drapeau;
 }
 
-int liste_vide(){
+int liste_vide_plat(){
   return (drapeau->preced == drapeau);
 }
 
-int hors_liste(){
+int hors_liste_plat(){
   return(ec == drapeau);
 }
 
-void en_tete(){
-  if(!liste_vide())
+void en_tete_plat(){
+  if(!liste_vide_plat())
     ec = drapeau->suiv;
 }
 
-void en_queue(){
-  if(!liste_vide())
+void en_queue_plat(){
+  if(!liste_vide_plat())
     ec = drapeau->preced;
 }
 
-void precedent(){
-  if(!hors_liste())
+void precedent_plat(){
+  if(!hors_liste_plat())
     ec = ec->preced;
 }
 
-void suivant(){
-  if(!hors_liste())
+void suivant_plat(){
+  if(!hors_liste_plat())
     ec = ec->suiv;
 }
 
-void effet_case(t_effet_case * e){
-  if(!hors_liste())
+void effet_case_plat(t_effet_case * e){
+  if(!hors_liste_plat())
     *e = ec->effet;
 }
 
-void modif_case(t_effet_case e){
-  if(!hors_liste())
+void modif_case_plat(t_effet_case e){
+  if(!hors_liste_plat())
     ec->effet = e;
 }
 
-void oter_case(){
+void oter_case_plat(){
   t_case * sup;
   sup=ec;
-  if(!hors_liste()){
+  if(!hors_liste_plat()){
     (ec->suiv)->preced = ec->preced;
     (ec->preced)->suiv = ec->suiv;
     ec = ec->preced;
@@ -65,10 +63,10 @@ void oter_case(){
   }
 }
 
-void ajout_droit(t_effet_case e){
+void ajout_droit_plat(t_effet_case e){
   t_case * nouv;
   nouv = malloc(sizeof(t_case));
-  if(liste_vide() || !hors_liste()){
+  if(liste_vide_plat() || !hors_liste_plat()){
     nouv->effet = e;
     nouv->preced = ec;
     nouv->suiv = ec->suiv;
@@ -78,10 +76,10 @@ void ajout_droit(t_effet_case e){
   }
 }
 
-void ajout_gauche(t_effet_case e){
+void ajout_gauche_plat(t_effet_case e){
   t_case * nouv;
   nouv = malloc(sizeof(t_case));
-  if(liste_vide() || !hors_liste()){
+  if(liste_vide_plat() || !hors_liste_plat()){
     nouv->effet = e;
     nouv->preced = ec->preced;
     nouv->suiv = ec;
@@ -96,7 +94,7 @@ void ajout_gauche(t_effet_case e){
 /* Création du plateau */
 void crea_plat(){
   //initialistaion variables
-  init_list();
+  init_list_plat();
   int i;
   int liste_effet[NB_CASE-1];
   int indice;
@@ -117,7 +115,7 @@ void crea_plat(){
   }
 
   t_effet_case effet = depart;
-  ajout_droit(effet);
+  ajout_droit_plat(effet);
   ec->nb_case=0;
 
   for(i=1; i<NB_CASE; i++){
@@ -126,10 +124,10 @@ void crea_plat(){
     } while(liste_effet[indice] == -1);
 
     effet = liste_effet[indice];
-    if(!hors_liste())
-      ajout_droit(effet);
+    if(!hors_liste_plat())
+      ajout_droit_plat(effet);
     ec->nb_case=i;
     liste_effet[indice]=-1;
   }
-  en_tete();
+  en_tete_plat();
 }

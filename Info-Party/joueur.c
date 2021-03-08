@@ -2,89 +2,29 @@
 #include <stdlib.h>
 #include "joueur.h"
 
-extern t_joueur * tete;
-extern t_joueur * jc;
 
-/* Mise en place par pointeurs des primitives d'accès à une liste */
+/* Initialisation des joueurs */
+void crea_joueurs(){
+  int i;
+  jou1 = malloc(sizeof(t_joueur));
 
-void init_list(){
-  tete = malloc(sizeof(t_joueur));
-  tete->preced = tete;
-  tete->suiv = tete;
-  jc = tete;
-}
+  jou2 = malloc(sizeof(t_joueur));
 
-int liste_vide(){
-  return (tete->preced == tete);
-}
+  jou3 = malloc(sizeof(t_joueur));
 
-int hors_liste(){
-  return(jc == tete);
-}
+  jou4 = malloc(sizeof(t_joueur));
 
-void en_tete(){
-  if(!liste_vide())
-    jc = tete->suiv;
-}
-
-void en_queue(){
-  if(!liste_vide())
-    jc = tete->prjced;
-}
-
-void prjcedent(){
-  if(!hors_liste())
-    jc = jc->prjced;
-}
-
-void suivant(){
-  if(!hors_liste())
-    jc = jc->suiv;
-}
-
-void effet_case(t_effet_case * e){
-  if(!hors_liste())
-    *e = jc->effet;
-}
-
-void modif_case(t_effet_case e){
-  if(!hors_liste())
-    jc->effet = e;
-}
-
-void oter_case(){
-  t_case * sup;
-  sup=jc;
-  if(!hors_liste()){
-    (jc->suiv)->prjced = jc->prjced;
-    (jc->prjced)->suiv = jc->suiv;
-    jc = jc->prjced;
-    free(sup);
-  }
-}
-
-void ajout_droit(t_effet_case e){
-  t_case * nouv;
-  nouv = malloc(sizeof(t_case));
-  if(liste_vide() || !hors_liste()){
-    nouv->effet = e;
-    nouv->prjced = jc;
-    nouv->suiv = jc->suiv;
-    (jc->suiv)->prjced = nouv;
-    jc->suiv = nouv;
-    jc = nouv;
-  }
-}
-
-void ajout_gauche(t_effet_case e){
-  t_case * nouv;
-  nouv = malloc(sizeof(t_case));
-  if(liste_vide() || !hors_liste()){
-    nouv->effet = e;
-    nouv->prjced = jc->prjced;
-    nouv->suiv = jc;
-    (jc->prjced)->suiv = nouv;
-    jc->prjced = nouv;
-    jc = nouv;
+  en_tete_plat(); // pour placer ec sur la case de départ
+  for(i=0; i<NB_JOUEURS; i++){
+    switch(i){
+      case 0: liste_joueurs[i]=jou1;break;
+      case 1: liste_joueurs[i]=jou2; break;
+      case 2: liste_joueurs[i]=jou3; break;
+      case 3: liste_joueurs[i]=jou4; break;
+    }
+    liste_joueurs[i]->position=ec; // tous les joueurs commencent sur la case de départ
+    liste_joueurs[i]->nb_pieces=10;
+    liste_joueurs[i]->nb_badges=0;
+    liste_joueurs[i]->num_joueur=i+1;
   }
 }

@@ -1,25 +1,24 @@
-##include "liste.h"
+#ifndef _JOUEUR_H_
+#define _JOUEUR_H_
+
+#include "liste.h"
+
+#define NB_JOUEURS 4
+
 
 typedef struct joueur{
   t_case * position;
   int nb_pieces;
   int nb_badges;
-  struct joueur * liste_joueur[3];
+  int num_joueur;
 }t_joueur;
 
-t_joueur * tete;
-t_joueur * jc;
+t_joueur * jou1;
+t_joueur * jou2;
+t_joueur * jou3;
+t_joueur * jou4;
+t_joueur * liste_joueurs[NB_JOUEURS];
 
-/* primitives liste */
-void init_list();
-int liste_vide();
-int hors_liste();
-void en_tete();
-void en_queue();
-void precedent();
-void suivant();
-void effet_case(t_effet_case * e);
-void modif_case(t_effet_case e);
-void oter_case();
-void ajout_droit(t_effet_case e);
-void ajout_gauche(t_effet_case e);
+void crea_joueurs();
+
+#endif
