@@ -105,9 +105,4 @@ void creation_partie(int * joueur, int * tour )
     clean_ressources(window,rendu,texture);
     clean_ressources(NULL,NULL,imagefond);
 }
-int main(int argc, char ** argv){
-	int a=2,b=4;
-	creation_partie(&a,&b);
-	printf("%i et %i \n",a,b);
-}
 //gcc src/creer_partie.c -o bin/prog -I include -L lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
