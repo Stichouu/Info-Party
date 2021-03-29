@@ -1,7 +1,7 @@
 #ifndef _JOUEUR_H_
 #define _JOUEUR_H_
 
-#include "liste.h"
+#include "plateau.h"
 
 #define NB_JOUEURS 4
 
@@ -20,5 +20,6 @@ t_joueur * jou4;
 t_joueur * liste_joueurs[NB_JOUEURS];
 
 void crea_joueurs();
+void effet_case(t_joueur * jou);
 
 #endif

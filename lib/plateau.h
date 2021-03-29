@@ -1,5 +1,5 @@
-#ifndef _LISTE_H_
-#define _LISTE_H_
+#ifndef _PLATEAU_H_
+#define _PLATEAU_H_
 
 /* Création des Objets et variables globales */
 #define NB_CASE 40

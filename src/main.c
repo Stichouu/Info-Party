@@ -1,42 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "liste.h"
-#include "joueur.h"
-#include "partie.h"
+#include "../lib/plateau.h"
+#include "../lib/joueur.h"
+#include "../lib/partie.h"
 
 
 
 int main(){
   srand( time( NULL ) );
   crea_plat();
-  int i,nb_choix;
+  crea_joueurs();
+
+  int i;
 
   for(i=0;i<NB_CASE && !hors_liste_plat(); i++){
     printf("effet case %i: %i\n",ec->nb_case,ec->effet);
     suivant_plat();
   }
 
-  une_partie(NB_TOURS);
-  printf("coucou");
 
-  printf("%i",liste_joueurs[2]->num_joueur);
+  une_partie(NB_TOURS);
 
 /*  for(i=0; i<NB_JOUEURS; i++){
     printf("joueur %i : est sur la case %i.\n",liste_joueurs[i]->num_joueur, liste_joueurs[i]->position->nb_case);
     printf("Il a %i pièces et %i badges.\n",liste_joueurs[i]->nb_pieces, liste_joueurs[i]->nb_badges);
   }*/
-  /* parcours du plateau */
-  /*printf("choisissez un nombre \n");
-  scanf("%i",&nb_choix);
-  for(i=0; i<nb_choix; i++){
-    suivant_plat();
-    if(hors_liste_plat()){
-      en_tete();
-    }
-    j1->position=ec;
-  }
-  printf("Vous êtes sur la case %i qui a pour effet: %i\n",j1->position->nb_case,j1->position->effet); */
+
+
 
   /* effet case */
 /*  switch(j1->position->effet){
