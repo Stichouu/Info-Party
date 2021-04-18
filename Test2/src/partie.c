@@ -34,22 +34,22 @@ void ordre_jeu(){
     nb_obtenu = rand()%9+1;
     switch (i) {
 
-      case 0: printf("Le joueur 1 lance un dé ...\n");
+      case 0: printf("Le joueur 1 lance un des ...\n");
               printf("Il a obtenu un %i.\n",nb_obtenu);
               de1=nb_obtenu;
               break;
 
-      case 1: printf("Le joueur 2 lance un dé ...\n");
+      case 1: printf("Le joueur 2 lance un des ...\n");
               printf("Il a obtenu un %i.\n",nb_obtenu);
               de2=nb_obtenu;
               break;
 
-      case 2: printf("Le joueur 3 lance un dé ...\n");
+      case 2: printf("Le joueur 3 lance un des ...\n");
               printf("Il a obtenu un %i.\n",nb_obtenu);
               de3=nb_obtenu;
               break;
 
-      case 3: printf("Le joueur 4 lance un dé ...\n");
+      case 3: printf("Le joueur 4 lance un des ...\n");
               printf("Il a obtenu un %i.\n",nb_obtenu);
               de4=nb_obtenu;
               break;
@@ -98,21 +98,54 @@ void ordre_jeu(){
 
 }
 
-void une_partie(int nb_tours){
+void une_partie(SDL_Window *fenetre,SDL_Renderer * rendu,SDL_Rect cases[NB_CASE],int liste_case[NB_CASE],int nb_tours,int nb_joueurs){
   int i, j, k;
   int jet_de;
+  int case_courant[NB_JOUEURS];
+  int stop=0;
 
+  for (i=0 ; i < NB_JOUEURS; i++)
+  {
+    case_courant[i] = 0;
+  }
   ordre_jeu();
-
+  for(int y=0; y< nb_joueurs;y++){
+      afficher_joueur_case(rendu,cases,case_courant,y);
+  }
   /* Gestion des tours */
 
-  for(i=0; i<NB_TOURS; i++){
+  for(i=0; i<nb_tours && stop!=1; i++){
+    SDL_bool program =SDL_TRUE;
     printf("\n \n -- Nous sommes au tour %i --\n \n ", i+1);
-      for(j=0; j<NB_JOUEURS; j++){
+      for(j=0; j<nb_joueurs; j++){
         printf("Au tour du joueur %i.\n",liste_joueurs[j]->num_joueur);
-        printf("Lancez un dé.\n");
+        printf("Lancez un des.\n");
         jet_de = rand()%9+1;
+        affichage_joueur_et_des(rendu,liste_joueurs[j]->num_joueur,jet_de);
+        while(program){
+          SDL_Event event;
+          while(SDL_PollEvent(&event)){
+            switch(event.type)
+            {
+              case SDL_QUIT:
+                program=SDL_FALSE;
+                stop=1;
+                break;
+              case SDL_KEYUP:
+                switch(event.key.keysym.sym)
+                {
+                  case SDLK_SPACE:
+                    program=SDL_FALSE; 
+                    break;
+                }
+                break;
+            }
+          }
+        }
+        if(stop!=1){
 
+        case_courant[j]=case_courant[j]+jet_de;
+        printf("%i\n",case_courant[j]);
         /* parcours du plateau */
         for(k=0; k<jet_de; k++){
           suivant_plat();
@@ -120,9 +153,14 @@ void une_partie(int nb_tours){
             en_tete_plat();
           }
           liste_joueurs[j]->position=ec;
+          printf("%i \n",liste_joueurs[j]->position->effet);
         }
         effet_case(liste_joueurs[j]);
+        afficher_joueur_bouge(fenetre,rendu,cases,liste_case,jet_de,case_courant,liste_joueurs[j]->num_joueur,nb_joueurs);
+
+
         printf("Vous avez %i pièces et %i badges.\n", liste_joueurs[j]->nb_pieces, liste_joueurs[j]->nb_badges);
       }
+    }
   }
 }

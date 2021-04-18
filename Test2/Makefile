@@ -1,4 +1,5 @@
 include Makefile.compilation
+
 fich_test_joueur = obj/test_joueur.o obj/joueur.o obj/plateau.o obj/petite_fonction.o
 fich_test_plateau = obj/test_plateau.o obj/plateau.o obj/petite_fonction.o
 fich_test_creer_partie = obj/test_creer_partie.o obj/creer_partie.o obj/petite_fonction.o obj/menu.o
@@ -52,6 +53,7 @@ obj/menu.o: src/menu.c lib/petite_fonction.h
 
 obj/petite_fonction.o: src/petite_fonction.c lib/petite_fonction.h
 	$(CCOBJ) $(CFLAGS) $(LIBMATH) src/petite_fonction.c -o obj/petite_fonction.o $(SDL)
+
 
 
 all : $(BIN)

@@ -13,58 +13,34 @@
 int main(int argc, char *argv[]){
   int joueur=4;
   int tour=4;
+  int quitter=0;
+  int liste_cases[NB_CASE];
+  SDL_Rect cases[NB_CASE];
   SDL_Window *fenetre=NULL;
+  SDL_Renderer *rendu= NULL;
   Uint32 affich_fenetre=SDL_WINDOW_MAXIMIZED;
   if(SDL_Init(SDL_INIT_VIDEO) != 0) //Lancement SDL
     SDL_ExitWithError("Initialisation SDL");
+  //Création de la fenêtre
   fenetre=SDL_CreateWindow("INFO PARTY",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,Fenetre_width,Fenetre_height,affich_fenetre);
   if (fenetre == NULL) {
     SDL_ExitWithError("La fenêtre n'a pas pu être créé");
   }
   SDL_GetWindowSize(fenetre,&Fenetre_width,&Fenetre_height);
-  menu(fenetre,&joueur,&tour);
+  menu(fenetre,&joueur,&tour,&quitter);
+  if(quitter==0){
   printf("%i",joueur);
   srand( time( NULL ) );
-  crea_plat(fenetre);
+  crea_plat(liste_cases,cases);
+    //Création du rendu de plateau
+  rendu=SDL_CreateRenderer(fenetre,-1,0);
+  if(rendu == NULL)
+    SDL_ExitWithError("Le rendu n'a pas pu être créé");
+
+  afficher_plateau(fenetre,rendu,cases,liste_cases);
   crea_joueurs();
-
-  int i;
-
-  for(i=0;i<NB_CASE && !hors_liste_plat(); i++){
-    printf("effet case %i: %i\n",ec->nb_case,ec->effet);
-    suivant_plat();
+  une_partie(fenetre,rendu,cases,liste_cases,tour,joueur);
+  clean_ressources(fenetre,rendu,NULL);
   }
-
-
-  une_partie(NB_TOURS);
-
-/*  for(i=0; i<NB_JOUEURS; i++){
-    printf("joueur %i : est sur la case %i.\n",liste_joueurs[i]->num_joueur, liste_joueurs[i]->position->nb_case);
-    printf("Il a %i pièces et %i badges.\n",liste_joueurs[i]->nb_pieces, liste_joueurs[i]->nb_badges);
-  }*/
-
-
-
-  /* effet case */
-/*  switch(j1->position->effet){
-    case 0: printf("Vous êtes sur la case de départ\n");
-            break;
-    case 1: printf("Vous êtes sur une case bleu, vous gagnez 3 pièces\n");
-            j1->nb_pieces+=3;
-            printf("Vous avez %i pièces\n",j1->nb_pieces);
-            break;
-    case 2: printf("Vous êtes sur une case rouge, vous perdez 3 pièces\n");
-            if(j1->nb_pieces!=0){
-                j1->nb_pieces-=3;
-            }
-            printf("Vous avez %i pièces\n",j1->nb_pieces);
-            break;
-    case 3: printf("Vous êtes sur une case shop\n");
-            break;
-    case 4: printf("Vous êtes sur une case mini-jeux (1v3/2v2)\n");
-            break;
-    case 5: printf("Vous êtes sur une case méchante\n");
-            break;
-  } */
   return 0;
 }

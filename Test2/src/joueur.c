@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "../lib/joueur.h"
 #include "../lib/petite_fonction.h"
+#include "../lib/partie.h"
 #include <SDL.h>
 #include <SDL_image.h>
 
@@ -55,4 +56,129 @@ void effet_case(t_joueur * jou){
              break;
    }
 
+}
+
+
+void afficher_joueur_case(SDL_Renderer * rendu, SDL_Rect cases[NB_CASE], int case_courant[NB_JOUEURS], int joueurs )
+{
+  SDL_Surface * tableau0=NULL;
+  SDL_Texture *texture=NULL;
+  tableau0=IMG_Load("src/img/bonhomme_entre_deux.png");
+  SDL_Rect joueur= {cases[case_courant[joueurs]].x,cases[case_courant[joueurs]].y,Fenetre_width/10, Fenetre_height/10};
+  SDL_AfficherUneImage( rendu, tableau0, texture, joueur);
+
+}
+
+void afficher_joueur_bouge(SDL_Window *fenetre,SDL_Renderer * rendu, SDL_Rect cases[NB_CASE],int liste_cases[NB_CASE],int NB_DES, int case_courant[NB_JOUEURS],int joueurs,int nb_joueurs)
+{
+  SDL_Surface * tableau0=NULL;
+  SDL_Texture * texture=NULL;
+  clean_ressources(NULL,rendu,texture);
+  afficher_plateau(fenetre,rendu,cases,liste_cases);
+  for(int y=0; y<nb_joueurs;y++){
+    if(y!=joueurs)
+      afficher_joueur_case(rendu,cases,case_courant,y);
+  }
+  tableau0=IMG_Load("src/img/bonhomme_entre_deux.png");
+  SDL_Rect joueur_position_finale={cases[case_courant[joueurs]+NB_DES].x,cases[case_courant[joueurs]+NB_DES].y,Fenetre_width/10, Fenetre_height/10};
+  SDL_AfficherUneImage( rendu, tableau0, texture, joueur_position_finale);
+
+  clean_ressources(NULL,NULL,texture);
+}
+
+
+void affichage_joueur_et_des(SDL_Renderer * rendu,int joueur,int numero_des){
+      SDL_Surface *image=NULL;
+      SDL_Texture *texture=NULL;
+      SDL_Rect case_de= {Fenetre_width/8*4,Fenetre_height/8*4,Fenetre_width/8,Fenetre_height/8};
+      SDL_Rect tour_joueur= {Fenetre_width/8*5,Fenetre_height/8*5,Fenetre_width/8,Fenetre_height/8};
+
+      SDL_Rect au_tour_de= {Fenetre_width/8*4,Fenetre_height/8*5,Fenetre_width/8,Fenetre_height/8};
+      image= IMG_Load("src/img/au_tour_de.png");
+      SDL_AfficherUneImage(rendu,image,texture,au_tour_de);
+
+      switch(joueur)
+      {
+        case 1:
+
+          image= IMG_Load("src/img/Joueur1.png");
+          SDL_AfficherUneImage(rendu,image,texture,tour_joueur);
+          break;
+        case 2:
+
+          image= IMG_Load("src/img/Joueur2.png");
+          SDL_AfficherUneImage(rendu,image,texture,tour_joueur);
+          break;
+        case 3:
+
+          image= IMG_Load("src/img/Joueur3.png");
+          SDL_AfficherUneImage(rendu,image,texture,tour_joueur);
+          break;
+        case 4:
+
+          image= IMG_Load("src/img/Joueur4.png");
+          SDL_AfficherUneImage(rendu,image,texture,tour_joueur);
+          break;
+
+      }
+
+      switch(numero_des)
+      {
+        case 1:
+
+          image= IMG_Load("src/img/de1.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+        case 2:
+
+          image= IMG_Load("src/img/de2.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+        case 3:
+
+          image= IMG_Load("src/img/de3.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+        case 4:
+
+          image= IMG_Load("src/img/de4.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+
+        case 5:
+
+          image= IMG_Load("src/img/de5.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+
+        case 6:
+
+          image= IMG_Load("src/img/de6.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+        case 7:
+
+          image= IMG_Load("src/img/de7.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+
+        case 8:
+
+          image= IMG_Load("src/img/de8.png");
+          SDL_AfficherUneImage(rendu,image,texture,case_de);
+          break;
+
+        case 9:
+
+            image= IMG_Load("src/img/de9.png");
+            SDL_AfficherUneImage(rendu,image,texture,case_de);
+            break;
+
+        case 10:
+
+            image= IMG_Load("src/img/de10.png");
+            SDL_AfficherUneImage(rendu,image,texture,case_de);
+            break;
+      }
+  clean_ressources(NULL,NULL,texture);
 }
