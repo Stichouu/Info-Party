@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INFO PARTY: Référence du fichier src/plateau.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">INFO PARTY
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier plateau.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Le plateau de notre jeu.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;../lib/plateau.h&quot;</code><br />
+<code>#include &quot;../lib/petite_fonction.h&quot;</code><br />
+<code>#include &lt;SDL.h&gt;</code><br />
+<code>#include &lt;SDL_image.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac9826cf0408931855ccddcb1318a3bba"><td class="memItemLeft" align="right" valign="top"><a id="ac9826cf0408931855ccddcb1318a3bba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8c.html#ac9826cf0408931855ccddcb1318a3bba">init_list_plat</a> ()</td></tr>
+<tr class="memdesc:ac9826cf0408931855ccddcb1318a3bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mise en place par pointeurs des primitives d'accès à une liste. <br /></td></tr>
+<tr class="separator:ac9826cf0408931855ccddcb1318a3bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222a1a922637da84d65850892fd7035b"><td class="memItemLeft" align="right" valign="top"><a id="a222a1a922637da84d65850892fd7035b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>liste_vide_plat</b> ()</td></tr>
+<tr class="separator:a222a1a922637da84d65850892fd7035b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18678e01ea1dbe3934f4e013a1ef64ee"><td class="memItemLeft" align="right" valign="top"><a id="a18678e01ea1dbe3934f4e013a1ef64ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>hors_liste_plat</b> ()</td></tr>
+<tr class="separator:a18678e01ea1dbe3934f4e013a1ef64ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae049daf78eefc1e32def67ff402764e3"><td class="memItemLeft" align="right" valign="top"><a id="ae049daf78eefc1e32def67ff402764e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>en_tete_plat</b> ()</td></tr>
+<tr class="separator:ae049daf78eefc1e32def67ff402764e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b14df26c8045ff5ac49b830fc4619d"><td class="memItemLeft" align="right" valign="top"><a id="ab9b14df26c8045ff5ac49b830fc4619d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>en_queue_plat</b> ()</td></tr>
+<tr class="separator:ab9b14df26c8045ff5ac49b830fc4619d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8581e0917f4d52cf806be8e8dae83669"><td class="memItemLeft" align="right" valign="top"><a id="a8581e0917f4d52cf806be8e8dae83669"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>precedent_plat</b> ()</td></tr>
+<tr class="separator:a8581e0917f4d52cf806be8e8dae83669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c6fa9868404662e958f04de91e3b1f"><td class="memItemLeft" align="right" valign="top"><a id="a67c6fa9868404662e958f04de91e3b1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>suivant_plat</b> ()</td></tr>
+<tr class="separator:a67c6fa9868404662e958f04de91e3b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6480f80360bafa12851c636584ce7c3"><td class="memItemLeft" align="right" valign="top"><a id="aa6480f80360bafa12851c636584ce7c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>effet_case_plat</b> (t_effet_case *e)</td></tr>
+<tr class="separator:aa6480f80360bafa12851c636584ce7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e5ac4dba7ad73428e809009cffe1ea"><td class="memItemLeft" align="right" valign="top"><a id="a50e5ac4dba7ad73428e809009cffe1ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>modif_case_plat</b> (t_effet_case e)</td></tr>
+<tr class="separator:a50e5ac4dba7ad73428e809009cffe1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac761a8a8eaacf144008b42d081928381"><td class="memItemLeft" align="right" valign="top"><a id="ac761a8a8eaacf144008b42d081928381"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>oter_case_plat</b> ()</td></tr>
+<tr class="separator:ac761a8a8eaacf144008b42d081928381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06285a995ba9c99c736c63c8c37c9b3a"><td class="memItemLeft" align="right" valign="top"><a id="a06285a995ba9c99c736c63c8c37c9b3a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ajout_droit_plat</b> (t_effet_case e)</td></tr>
+<tr class="separator:a06285a995ba9c99c736c63c8c37c9b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53eb773385bf1dcd36b7aa34f0185b96"><td class="memItemLeft" align="right" valign="top"><a id="a53eb773385bf1dcd36b7aa34f0185b96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ajout_gauche_plat</b> (t_effet_case e)</td></tr>
+<tr class="separator:a53eb773385bf1dcd36b7aa34f0185b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a81d34d64f887ad25b1a55247154210"><td class="memItemLeft" align="right" valign="top"><a id="a0a81d34d64f887ad25b1a55247154210"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>crea_plat</b> (int liste_case[NB_CASE], SDL_Rect cases[NB_CASE])</td></tr>
+<tr class="separator:a0a81d34d64f887ad25b1a55247154210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d04274f2add4267c33f8721cbfdcd19"><td class="memItemLeft" align="right" valign="top"><a id="a4d04274f2add4267c33f8721cbfdcd19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>afficher_plateau</b> (SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE])</td></tr>
+<tr class="separator:a4d04274f2add4267c33f8721cbfdcd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Le plateau de notre jeu. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Tan Tony </dd>
+<dd>
+Tessier Killian </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.0 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

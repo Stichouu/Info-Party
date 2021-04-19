@@ -1,0 +1,52 @@
+\hypertarget{menu_8c}{}\doxysection{Référence du fichier src/menu.c}
+\label{menu_8c}\index{src/menu.c@{src/menu.c}}
+
+
+Le menu de notre jeu.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/petite\+\_\+fonction.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8c_a0be26bb4b74a85c4fe2e61797174ac7e}{menu}} (SDL\+\_\+\+Window $\ast$fenetre, int $\ast$\mbox{\hyperlink{structjoueur}{joueur}}, int $\ast$tour, int $\ast$quitter)
+\begin{DoxyCompactList}\small\item\em la fonction permettant d\textquotesingle{}afficher notre menu en conservant la fenêtre et permettant d\textquotesingle{}accéder à la création d\textquotesingle{}une partie,de rejoindre une partie,des options ou à quitter le jeu en cliquant sur la case dédiée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Le menu de notre jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Pennachi Cyprien 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+6 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{menu_8c_a0be26bb4b74a85c4fe2e61797174ac7e}\label{menu_8c_a0be26bb4b74a85c4fe2e61797174ac7e}} 
+\index{menu.c@{menu.c}!menu@{menu}}
+\index{menu@{menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{fenetre,  }\item[{int $\ast$}]{joueur,  }\item[{int $\ast$}]{tour,  }\item[{int $\ast$}]{quitter }\end{DoxyParamCaption})}
+
+
+
+la fonction permettant d\textquotesingle{}afficher notre menu en conservant la fenêtre et permettant d\textquotesingle{}accéder à la création d\textquotesingle{}une partie,de rejoindre une partie,des options ou à quitter le jeu en cliquant sur la case dédiée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fenetre} & Pointeur sur un objet de type SDL\+\_\+\+Window pour garder ma fenêtre. \\
+\hline
+{\em joueur} & Pointeur sur un objet de type integer pour changer si besoin sa valeur pour avoir le nombre de joueurs. \\
+\hline
+{\em tour} & Pointeur sur un objet de type integer pour changer si besoin sa valeur pour avoir le nombre de tours. \\
+\hline
+{\em quitter} & Pointeur sur un objet de type integer pour changer si besoin sa valeur afin de savoir si on quitte le programme. \\
+\hline
+\end{DoxyParams}

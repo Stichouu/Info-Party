@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INFO PARTY:  Fichier source de lib/joueur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">INFO PARTY
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">joueur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _JOUEUR_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _JOUEUR_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;plateau.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define NB_JOUEURS 4</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structjoueur.html">    9</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structjoueur.html">joueur</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="structcase__jeu.html">t_case</a> * position;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordtype">int</span> nb_pieces;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">int</span> nb_badges;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">int</span> num_joueur;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}<a class="code" href="structjoueur.html">t_joueur</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="structjoueur.html">t_joueur</a> * jou1;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="structjoueur.html">t_joueur</a> * jou2;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="structjoueur.html">t_joueur</a> * jou3;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="structjoueur.html">t_joueur</a> * jou4;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="structjoueur.html">t_joueur</a> * liste_joueurs[NB_JOUEURS];</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="joueur_8c.html#ae20d912bd5019ea22571ce4f8bbbcb47">crea_joueurs</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="joueur_8c.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a>(<a class="code" href="structjoueur.html">t_joueur</a> * jou);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="joueur_8c.html#ab943ad925be00a5e4b5f73a391600f37">afficher_joueur_case</a>(SDL_Renderer * rendu, SDL_Rect cases[NB_CASE], <span class="keywordtype">int</span> case_courant[NB_JOUEURS], <span class="keywordtype">int</span> <a class="code" href="structjoueur.html">joueur</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="joueur_8c.html#ada85198a1327305e531e4c0564359d59">afficher_joueur_bouge</a>(SDL_Window *fenetre,SDL_Renderer * rendu, SDL_Rect cases[NB_CASE],<span class="keywordtype">int</span> liste_case[NB_CASE],<span class="keywordtype">int</span> NB_DES, <span class="keywordtype">int</span> case_courant[NB_JOUEURS],<span class="keywordtype">int</span> <a class="code" href="structjoueur.html">joueur</a>,<span class="keywordtype">int</span> nb_joueurs);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="joueur_8c.html#a268e72abf1ade5615b319eb76fd74b71">affichage_joueur_et_des</a>(SDL_Renderer * rendu,<span class="keywordtype">int</span> <a class="code" href="structjoueur.html">joueur</a>,<span class="keywordtype">int</span> numero_des);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ajoueur_8c_html_a10a8aeaedd187b8d1e18a820b40d1b2f"><div class="ttname"><a href="joueur_8c.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a></div><div class="ttdeci">void effet_case(t_joueur *jou)</div><div class="ttdoc">La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l'effet de la...</div><div class="ttdef"><b>Definition:</b> joueur.c:56</div></div>
+<div class="ttc" id="ajoueur_8c_html_a268e72abf1ade5615b319eb76fd74b71"><div class="ttname"><a href="joueur_8c.html#a268e72abf1ade5615b319eb76fd74b71">affichage_joueur_et_des</a></div><div class="ttdeci">void affichage_joueur_et_des(SDL_Renderer *rendu, int joueur, int numero_des)</div><div class="ttdoc">La fonction affiche sur la fenêtre l'image du tour d'un joueur (prit en paramètre) et l'image du numé...</div><div class="ttdef"><b>Definition:</b> joueur.c:137</div></div>
+<div class="ttc" id="ajoueur_8c_html_ab943ad925be00a5e4b5f73a391600f37"><div class="ttname"><a href="joueur_8c.html#ab943ad925be00a5e4b5f73a391600f37">afficher_joueur_case</a></div><div class="ttdeci">void afficher_joueur_case(SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int case_courant[NB_JOUEURS], int joueurs)</div><div class="ttdoc">La fonction affiche sur la fenêtre l'image du joueur (prit en paramètre) à tel position à l'aide des ...</div><div class="ttdef"><b>Definition:</b> joueur.c:90</div></div>
+<div class="ttc" id="ajoueur_8c_html_ada85198a1327305e531e4c0564359d59"><div class="ttname"><a href="joueur_8c.html#ada85198a1327305e531e4c0564359d59">afficher_joueur_bouge</a></div><div class="ttdeci">void afficher_joueur_bouge(SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_cases[NB_CASE], int NB_DES, int case_courant[NB_JOUEURS], int joueurs, int nb_joueurs)</div><div class="ttdoc">La fonction affiche sur la fenêtre le joueur (prit en paramètre) après avoir effectuer son déplacemen...</div><div class="ttdef"><b>Definition:</b> joueur.c:113</div></div>
+<div class="ttc" id="ajoueur_8c_html_ae20d912bd5019ea22571ce4f8bbbcb47"><div class="ttname"><a href="joueur_8c.html#ae20d912bd5019ea22571ce4f8bbbcb47">crea_joueurs</a></div><div class="ttdeci">void crea_joueurs()</div><div class="ttdoc">initialisation de 4 pointeurs sur objet de type t_joueur puis les regroupe dans un tableau de pointeu...</div><div class="ttdef"><b>Definition:</b> joueur.c:25</div></div>
+<div class="ttc" id="astructcase__jeu_html"><div class="ttname"><a href="structcase__jeu.html">case_jeu</a></div><div class="ttdef"><b>Definition:</b> plateau.h:10</div></div>
+<div class="ttc" id="astructjoueur_html"><div class="ttname"><a href="structjoueur.html">joueur</a></div><div class="ttdef"><b>Definition:</b> joueur.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

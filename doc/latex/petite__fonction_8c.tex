@@ -1,0 +1,90 @@
+\hypertarget{petite__fonction_8c}{}\doxysection{Référence du fichier src/petite\+\_\+fonction.c}
+\label{petite__fonction_8c}\index{src/petite\_fonction.c@{src/petite\_fonction.c}}
+
+
+La création de petites fonctions utiles à l\textquotesingle{}affichage SDL.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/petite\+\_\+fonction.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{petite__fonction_8c_abed124ab111ee095d48f08e2a3ea4446}{SDL\+\_\+\+Exit\+With\+Error}} (const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Cette fonction va prendre en paramètre un message pour ensuite l\textquotesingle{}afficher sur le terminal avec l\textquotesingle{}erreur puis va quitter la fenêtre SDL ainsi que le programme. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{petite__fonction_8c_ab5a05aef8d835e7085556a2ef01f8710}{clean\+\_\+ressources}} (SDL\+\_\+\+Window $\ast$w, SDL\+\_\+\+Renderer $\ast$r, SDL\+\_\+\+Texture $\ast$t)
+\begin{DoxyCompactList}\small\item\em Cette fonction va appeler les fonction SDL\+\_\+\+Destroy... pour détruire ces différentes variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{petite__fonction_8c_ad049bc7aea54b9afd7d083055f877647}{SDL\+\_\+\+Afficher\+Une\+Image}} (SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Surface $\ast$image, SDL\+\_\+\+Texture $\ast$texture, SDL\+\_\+\+Rect rectangle)
+\begin{DoxyCompactList}\small\item\em Cette fonction va afficher notre image sur la fenêtre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La création de petites fonctions utiles à l\textquotesingle{}affichage SDL. 
+
+\begin{DoxyAuthor}{Auteur}
+Tan Tony 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{petite__fonction_8c_ab5a05aef8d835e7085556a2ef01f8710}\label{petite__fonction_8c_ab5a05aef8d835e7085556a2ef01f8710}} 
+\index{petite\_fonction.c@{petite\_fonction.c}!clean\_ressources@{clean\_ressources}}
+\index{clean\_ressources@{clean\_ressources}!petite\_fonction.c@{petite\_fonction.c}}
+\doxysubsubsection{\texorpdfstring{clean\_ressources()}{clean\_ressources()}}
+{\footnotesize\ttfamily void clean\+\_\+ressources (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{w,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{r,  }\item[{SDL\+\_\+\+Texture $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Cette fonction va appeler les fonction SDL\+\_\+\+Destroy... pour détruire ces différentes variables. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em w} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Window \\
+\hline
+{\em r} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em t} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Texture\\
+\hline
+\end{DoxyParams}
+Il détruit soit la fenêtre soit le rendu soit la texture soit deux des trois soit tous soit aucun. \mbox{\Hypertarget{petite__fonction_8c_ad049bc7aea54b9afd7d083055f877647}\label{petite__fonction_8c_ad049bc7aea54b9afd7d083055f877647}} 
+\index{petite\_fonction.c@{petite\_fonction.c}!SDL\_AfficherUneImage@{SDL\_AfficherUneImage}}
+\index{SDL\_AfficherUneImage@{SDL\_AfficherUneImage}!petite\_fonction.c@{petite\_fonction.c}}
+\doxysubsubsection{\texorpdfstring{SDL\_AfficherUneImage()}{SDL\_AfficherUneImage()}}
+{\footnotesize\ttfamily void SDL\+\_\+\+Afficher\+Une\+Image (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{SDL\+\_\+\+Surface $\ast$}]{image,  }\item[{SDL\+\_\+\+Texture $\ast$}]{texture,  }\item[{SDL\+\_\+\+Rect}]{rectangle }\end{DoxyParamCaption})}
+
+
+
+Cette fonction va afficher notre image sur la fenêtre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rendu} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em image} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Surface \\
+\hline
+{\em texture} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Texture \\
+\hline
+{\em rectangle} & Pointeur d\textquotesingle{}un objet de type SDL\+\_\+\+Rect \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{petite__fonction_8c_abed124ab111ee095d48f08e2a3ea4446}\label{petite__fonction_8c_abed124ab111ee095d48f08e2a3ea4446}} 
+\index{petite\_fonction.c@{petite\_fonction.c}!SDL\_ExitWithError@{SDL\_ExitWithError}}
+\index{SDL\_ExitWithError@{SDL\_ExitWithError}!petite\_fonction.c@{petite\_fonction.c}}
+\doxysubsubsection{\texorpdfstring{SDL\_ExitWithError()}{SDL\_ExitWithError()}}
+{\footnotesize\ttfamily void SDL\+\_\+\+Exit\+With\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+Cette fonction va prendre en paramètre un message pour ensuite l\textquotesingle{}afficher sur le terminal avec l\textquotesingle{}erreur puis va quitter la fenêtre SDL ainsi que le programme. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em message} & Constante d\textquotesingle{}un objet de type char \\
+\hline
+\end{DoxyParams}

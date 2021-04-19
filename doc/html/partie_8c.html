@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INFO PARTY: Référence du fichier src/partie.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">INFO PARTY
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier partie.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Le déroulement d'une partie de notre jeu.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;../lib/partie.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ae389583e3483c08bcf1c4c95a941a7f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partie_8c.html#ae389583e3483c08bcf1c4c95a941a7f3">trie</a> (int *t, int n)</td></tr>
+<tr class="memdesc:ae389583e3483c08bcf1c4c95a941a7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction permet de trier dans l'ordre décroissant (trie bulle) notre pointeur t.  <a href="partie_8c.html#ae389583e3483c08bcf1c4c95a941a7f3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae389583e3483c08bcf1c4c95a941a7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754dfc59a1b95f2dd0af8a473a81f36c"><td class="memItemLeft" align="right" valign="top"><a id="a754dfc59a1b95f2dd0af8a473a81f36c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partie_8c.html#a754dfc59a1b95f2dd0af8a473a81f36c">ordre_jeu</a> ()</td></tr>
+<tr class="memdesc:a754dfc59a1b95f2dd0af8a473a81f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction va définir l'ordre de jeu en début de partie. <br /></td></tr>
+<tr class="separator:a754dfc59a1b95f2dd0af8a473a81f36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040b9000aaa98f45c5ce0eaaf0d8aa89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partie_8c.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">une_partie</a> (SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE], int nb_tours, int nb_joueurs)</td></tr>
+<tr class="memdesc:a040b9000aaa98f45c5ce0eaaf0d8aa89"><td class="mdescLeft">&#160;</td><td class="mdescRight">la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appellant plusieurs fonctions.  <a href="partie_8c.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a040b9000aaa98f45c5ce0eaaf0d8aa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Le déroulement d'une partie de notre jeu. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Cyprien Pennachi </dd>
+<dd>
+Tessier Killian </dd>
+<dd>
+Tan Tony </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.0 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ae389583e3483c08bcf1c4c95a941a7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae389583e3483c08bcf1c4c95a941a7f3">&#9670;&nbsp;</a></span>trie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void trie </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La fonction permet de trier dans l'ordre décroissant (trie bulle) notre pointeur t. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Pointeur sur un objet de type integer </td></tr>
+    <tr><td class="paramname">n</td><td>Objet de type integer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a040b9000aaa98f45c5ce0eaaf0d8aa89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040b9000aaa98f45c5ce0eaaf0d8aa89">&#9670;&nbsp;</a></span>une_partie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void une_partie </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>fenetre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>rendu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>cases</em>[NB_CASE], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liste_case</em>[NB_CASE], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_tours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_joueurs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appellant plusieurs fonctions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fenetre</td><td>Pointeur sur un objet de type SDL_Window </td></tr>
+    <tr><td class="paramname">rendu</td><td>Pointeur sur un objet de type SDL_Renderer </td></tr>
+    <tr><td class="paramname">cases[NB_CASE]</td><td>Tableau de taille NB_CASE d'objet de type SDL_Rect déjà initialisé </td></tr>
+    <tr><td class="paramname">liste_cases[NB_CASE]</td><td>Tableau de taille NB_CASE d'objet de type integer </td></tr>
+    <tr><td class="paramname">nb_tours</td><td>Objet de type integer </td></tr>
+    <tr><td class="paramname">nb_joueurs</td><td>Objet de type integer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
