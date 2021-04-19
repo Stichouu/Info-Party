@@ -1,0 +1,171 @@
+\hypertarget{plateau_8h}{}\doxysection{Référence du fichier lib/plateau.h}
+\label{plateau_8h}\index{lib/plateau.h@{lib/plateau.h}}
+
+
+Les fonctions prototypes de \mbox{\hyperlink{plateau_8c}{plateau.\+c}}.  
+
+
+{\ttfamily \#include \char`\"{}petite\+\_\+fonction.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plateau_8h_ac2e833c09f9be68030265e44573b8551}\label{plateau_8h_ac2e833c09f9be68030265e44573b8551}} 
+\#define {\bfseries NB\+\_\+\+CASE}~40
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plateau_8h_a039a0709dce1e43f2f33a17f2fba3368}\label{plateau_8h_a039a0709dce1e43f2f33a17f2fba3368}} 
+typedef struct \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}} {\bfseries t\+\_\+case}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plateau_8h_adf2dd3bfd1fefe666a6fe39bc1027989}\label{plateau_8h_adf2dd3bfd1fefe666a6fe39bc1027989}} 
+enum {\bfseries t\+\_\+effet\+\_\+case} \{ \newline
+{\bfseries depart}
+, {\bfseries bleu}
+, {\bfseries rouge}
+, {\bfseries shop}
+, \newline
+{\bfseries minijeux}
+, {\bfseries mechant}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plateau_8h_ac9826cf0408931855ccddcb1318a3bba}\label{plateau_8h_ac9826cf0408931855ccddcb1318a3bba}} 
+void \mbox{\hyperlink{plateau_8h_ac9826cf0408931855ccddcb1318a3bba}{init\+\_\+list\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em On initialise notre liste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_a222a1a922637da84d65850892fd7035b}\label{plateau_8h_a222a1a922637da84d65850892fd7035b}} 
+int \mbox{\hyperlink{plateau_8h_a222a1a922637da84d65850892fd7035b}{liste\+\_\+vide\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Une fonction booléenne qui renvoie vrai si la liste est vide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_a18678e01ea1dbe3934f4e013a1ef64ee}\label{plateau_8h_a18678e01ea1dbe3934f4e013a1ef64ee}} 
+int \mbox{\hyperlink{plateau_8h_a18678e01ea1dbe3934f4e013a1ef64ee}{hors\+\_\+liste\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Une fonction booléenne qui renvoie vrai si l\textquotesingle{}élément courant est sorti de la liste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_ae049daf78eefc1e32def67ff402764e3}\label{plateau_8h_ae049daf78eefc1e32def67ff402764e3}} 
+void \mbox{\hyperlink{plateau_8h_ae049daf78eefc1e32def67ff402764e3}{en\+\_\+tete\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction place l\textquotesingle{}élément courant, à l\textquotesingle{}élément en tête de liste si la liste n\textquotesingle{}est pas vide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_ab9b14df26c8045ff5ac49b830fc4619d}\label{plateau_8h_ab9b14df26c8045ff5ac49b830fc4619d}} 
+void \mbox{\hyperlink{plateau_8h_ab9b14df26c8045ff5ac49b830fc4619d}{en\+\_\+queue\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction place l\textquotesingle{}élément courant, à l\textquotesingle{}élément en queue de liste si la liste n\textquotesingle{}est pas vide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_a8581e0917f4d52cf806be8e8dae83669}\label{plateau_8h_a8581e0917f4d52cf806be8e8dae83669}} 
+void \mbox{\hyperlink{plateau_8h_a8581e0917f4d52cf806be8e8dae83669}{precedent\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Place l\textquotesingle{}élément courant à l\textquotesingle{}élément précédent si nous ne sommes pas sorti de la liste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_a67c6fa9868404662e958f04de91e3b1f}\label{plateau_8h_a67c6fa9868404662e958f04de91e3b1f}} 
+void \mbox{\hyperlink{plateau_8h_a67c6fa9868404662e958f04de91e3b1f}{suivant\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Place l\textquotesingle{}élément courant à l\textquotesingle{}élément suivant si nous ne sommes pas sorti de la liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plateau_8h_aa6480f80360bafa12851c636584ce7c3}{effet\+\_\+case\+\_\+plat}} (t\+\_\+effet\+\_\+case $\ast$e)
+\begin{DoxyCompactList}\small\item\em Renvoie à l\textquotesingle{}adresse entrée en paramètre l\textquotesingle{}effet de l\textquotesingle{}élément courant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plateau_8h_a50e5ac4dba7ad73428e809009cffe1ea}{modif\+\_\+case\+\_\+plat}} (t\+\_\+effet\+\_\+case e)
+\begin{DoxyCompactList}\small\item\em Donne à l\textquotesingle{}effet de l\textquotesingle{}élément courant la valeur entrée en paramètre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_ac761a8a8eaacf144008b42d081928381}\label{plateau_8h_ac761a8a8eaacf144008b42d081928381}} 
+void \mbox{\hyperlink{plateau_8h_ac761a8a8eaacf144008b42d081928381}{oter\+\_\+case\+\_\+plat}} ()
+\begin{DoxyCompactList}\small\item\em Si nous ne sommes pas sortis de la liste, supprimer l\textquotesingle{}élément courant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{plateau_8h_a06285a995ba9c99c736c63c8c37c9b3a}\label{plateau_8h_a06285a995ba9c99c736c63c8c37c9b3a}} 
+void {\bfseries ajout\+\_\+droit\+\_\+plat} (t\+\_\+effet\+\_\+case e)
+\item 
+\mbox{\Hypertarget{plateau_8h_a53eb773385bf1dcd36b7aa34f0185b96}\label{plateau_8h_a53eb773385bf1dcd36b7aa34f0185b96}} 
+void {\bfseries ajout\+\_\+gauche\+\_\+plat} (t\+\_\+effet\+\_\+case e)
+\item 
+void \mbox{\hyperlink{plateau_8h_a0a81d34d64f887ad25b1a55247154210}{crea\+\_\+plat}} (int liste\+\_\+case\mbox{[}NB\+\_\+\+CASE\mbox{]}, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]})
+\begin{DoxyCompactList}\small\item\em création du plateau et initialisation du plateau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plateau_8h_a4d04274f2add4267c33f8721cbfdcd19}{afficher\+\_\+plateau}} (SDL\+\_\+\+Window $\ast$fenetre, SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int liste\+\_\+case\mbox{[}NB\+\_\+\+CASE\mbox{]})
+\begin{DoxyCompactList}\small\item\em affichage du plateau \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{plateau_8h_ab6d598e6e240282f50e383fe469f24d5}\label{plateau_8h_ab6d598e6e240282f50e383fe469f24d5}} 
+\mbox{\hyperlink{structt__case}{t\+\_\+case}} $\ast$ {\bfseries drapeau}
+\item 
+\mbox{\Hypertarget{plateau_8h_a350caaf65e46a734c7408eb3ba4ed0fe}\label{plateau_8h_a350caaf65e46a734c7408eb3ba4ed0fe}} 
+\mbox{\hyperlink{structt__case}{t\+\_\+case}} $\ast$ {\bfseries ec}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Les fonctions prototypes de \mbox{\hyperlink{plateau_8c}{plateau.\+c}}. 
+
+\begin{DoxyAuthor}{Auteur}
+Tan Tony 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+6 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{plateau_8h_a4d04274f2add4267c33f8721cbfdcd19}\label{plateau_8h_a4d04274f2add4267c33f8721cbfdcd19}} 
+\index{plateau.h@{plateau.h}!afficher\_plateau@{afficher\_plateau}}
+\index{afficher\_plateau@{afficher\_plateau}!plateau.h@{plateau.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_plateau()}{afficher\_plateau()}}
+{\footnotesize\ttfamily void afficher\+\_\+plateau (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{fenetre,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{SDL\+\_\+\+Rect}]{cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{liste\+\_\+case\mbox{[}\+NB\+\_\+\+CASE\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affichage du plateau 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fenetre} & Pointeur sur un objet de type SDL\+\_\+\+Window \\
+\hline
+{\em rendu} & Pointeur sur un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em liste\+\_\+cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type integer \\
+\hline
+{\em cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type SDL\+\_\+\+Rect déjà initialisé \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plateau_8h_a0a81d34d64f887ad25b1a55247154210}\label{plateau_8h_a0a81d34d64f887ad25b1a55247154210}} 
+\index{plateau.h@{plateau.h}!crea\_plat@{crea\_plat}}
+\index{crea\_plat@{crea\_plat}!plateau.h@{plateau.h}}
+\doxysubsubsection{\texorpdfstring{crea\_plat()}{crea\_plat()}}
+{\footnotesize\ttfamily void crea\+\_\+plat (\begin{DoxyParamCaption}\item[{int}]{liste\+\_\+case\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{SDL\+\_\+\+Rect}]{cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+création du plateau et initialisation du plateau 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em liste\+\_\+cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type integer \\
+\hline
+{\em cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type SDL\+\_\+\+Rect déjà initialisé \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plateau_8h_aa6480f80360bafa12851c636584ce7c3}\label{plateau_8h_aa6480f80360bafa12851c636584ce7c3}} 
+\index{plateau.h@{plateau.h}!effet\_case\_plat@{effet\_case\_plat}}
+\index{effet\_case\_plat@{effet\_case\_plat}!plateau.h@{plateau.h}}
+\doxysubsubsection{\texorpdfstring{effet\_case\_plat()}{effet\_case\_plat()}}
+{\footnotesize\ttfamily void effet\+\_\+case\+\_\+plat (\begin{DoxyParamCaption}\item[{t\+\_\+effet\+\_\+case $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Renvoie à l\textquotesingle{}adresse entrée en paramètre l\textquotesingle{}effet de l\textquotesingle{}élément courant. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em adresse} & d\textquotesingle{}un type enum correspondant à un effet de case. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plateau_8h_a50e5ac4dba7ad73428e809009cffe1ea}\label{plateau_8h_a50e5ac4dba7ad73428e809009cffe1ea}} 
+\index{plateau.h@{plateau.h}!modif\_case\_plat@{modif\_case\_plat}}
+\index{modif\_case\_plat@{modif\_case\_plat}!plateau.h@{plateau.h}}
+\doxysubsubsection{\texorpdfstring{modif\_case\_plat()}{modif\_case\_plat()}}
+{\footnotesize\ttfamily void modif\+\_\+case\+\_\+plat (\begin{DoxyParamCaption}\item[{t\+\_\+effet\+\_\+case}]{e }\end{DoxyParamCaption})}
+
+
+
+Donne à l\textquotesingle{}effet de l\textquotesingle{}élément courant la valeur entrée en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type} & enum correspondant à un effet de case. \\
+\hline
+\end{DoxyParams}

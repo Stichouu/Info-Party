@@ -1,0 +1,77 @@
+\hypertarget{partie_8h}{}\doxysection{Référence du fichier lib/partie.h}
+\label{partie_8h}\index{lib/partie.h@{lib/partie.h}}
+
+
+fonction prototype de \mbox{\hyperlink{partie_8c}{partie.\+c}}  
+
+
+{\ttfamily \#include \char`\"{}joueur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}plateau.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{partie_8h_a215cffcfd43dd154d2fe0eb9b6998f2d}{NB\+\_\+\+TOURS}}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{partie_8h_a754dfc59a1b95f2dd0af8a473a81f36c}\label{partie_8h_a754dfc59a1b95f2dd0af8a473a81f36c}} 
+void \mbox{\hyperlink{partie_8h_a754dfc59a1b95f2dd0af8a473a81f36c}{ordre\+\_\+jeu}} ()
+\begin{DoxyCompactList}\small\item\em La fonction va définir l\textquotesingle{}ordre de jeu en début de partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{partie_8h_a040b9000aaa98f45c5ce0eaaf0d8aa89}{une\+\_\+partie}} (SDL\+\_\+\+Window $\ast$fenetre, SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int liste\+\_\+case\mbox{[}NB\+\_\+\+CASE\mbox{]}, int nb\+\_\+tours, int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appellant plusieurs fonctions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+fonction prototype de \mbox{\hyperlink{partie_8c}{partie.\+c}} 
+
+\begin{DoxyAuthor}{Auteur}
+Tan Tony 
+
+Tessier Killian 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{partie_8h_a215cffcfd43dd154d2fe0eb9b6998f2d}\label{partie_8h_a215cffcfd43dd154d2fe0eb9b6998f2d}} 
+\index{partie.h@{partie.h}!NB\_TOURS@{NB\_TOURS}}
+\index{NB\_TOURS@{NB\_TOURS}!partie.h@{partie.h}}
+\doxysubsubsection{\texorpdfstring{NB\_TOURS}{NB\_TOURS}}
+{\footnotesize\ttfamily \#define NB\+\_\+\+TOURS~20}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em NB\+\_\+\+TOURS} & le nombre de tours sert à faire tourner le jeu pendant un certaun nombre de tour et en l\textquotesingle{}occurence, ici, 20 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{partie_8h_a040b9000aaa98f45c5ce0eaaf0d8aa89}\label{partie_8h_a040b9000aaa98f45c5ce0eaaf0d8aa89}} 
+\index{partie.h@{partie.h}!une\_partie@{une\_partie}}
+\index{une\_partie@{une\_partie}!partie.h@{partie.h}}
+\doxysubsubsection{\texorpdfstring{une\_partie()}{une\_partie()}}
+{\footnotesize\ttfamily void une\+\_\+partie (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{fenetre,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{SDL\+\_\+\+Rect}]{cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{liste\+\_\+case\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{nb\+\_\+tours,  }\item[{int}]{nb\+\_\+joueurs }\end{DoxyParamCaption})}
+
+
+
+la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appellant plusieurs fonctions. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fenetre} & Pointeur sur un objet de type SDL\+\_\+\+Window \\
+\hline
+{\em rendu} & Pointeur sur un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type SDL\+\_\+\+Rect déjà initialisé \\
+\hline
+{\em liste\+\_\+cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type integer \\
+\hline
+{\em nb\+\_\+tours} & Objet de type integer \\
+\hline
+{\em nb\+\_\+joueurs} & Objet de type integer \\
+\hline
+\end{DoxyParams}

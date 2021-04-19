@@ -1,12 +1,21 @@
 #ifndef _PLATEAU_H_
 #define _PLATEAU_H_
-
+/**
+* \file plateau.h
+* \author Tan Tony
+* \version 2.6
+* \brief Les fonctions prototypes de plateau.c
+*/
 #include "petite_fonction.h"
 /* Création des Objets et variables globales */
 #define NB_CASE 40
-
+/**
+*\enum t_effet_case
+*/
 typedef enum {depart, bleu, rouge, shop, minijeux, mechant} t_effet_case;
-
+/**
+* \struct t_case
+*/
 typedef struct case_jeu{
   /* data */
   t_effet_case effet;

@@ -1,0 +1,170 @@
+\hypertarget{joueur_8h}{}\doxysection{Référence du fichier lib/joueur.h}
+\label{joueur_8h}\index{lib/joueur.h@{lib/joueur.h}}
+
+
+les fonction prototypes de \mbox{\hyperlink{joueur_8c}{joueur.\+c}}  
+
+
+{\ttfamily \#include \char`\"{}plateau.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structjoueur}{joueur}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{joueur_8h_a3e417dda93856044faf7542bf6c70682}\label{joueur_8h_a3e417dda93856044faf7542bf6c70682}} 
+typedef struct \mbox{\hyperlink{structjoueur}{joueur}} {\bfseries t\+\_\+joueur}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}\label{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}} 
+void \mbox{\hyperlink{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}{crea\+\_\+joueurs}} ()
+\begin{DoxyCompactList}\small\item\em initialisation de 4 pointeurs sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} puis les regroupe dans un tableau de pointeur sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} afin d\textquotesingle{}initialiser les 4 potentiels joueurs de notre partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8h_a10a8aeaedd187b8d1e18a820b40d1b2f}{effet\+\_\+case}} (\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$jou)
+\begin{DoxyCompactList}\small\item\em La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l\textquotesingle{}effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8h_a8bf49192641348dfd73dd4a4d50c7389}{afficher\+\_\+joueur\+\_\+case}} (SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int case\+\_\+courant\mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}, int \mbox{\hyperlink{structjoueur}{joueur}})
+\begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) à tel position à l\textquotesingle{}aide des coordonnées de la case (prit en paramètre). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8h_a5332b2d1b6455fbf257110ba9505f174}{afficher\+\_\+joueur\+\_\+bouge}} (SDL\+\_\+\+Window $\ast$fenetre, SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int liste\+\_\+case\mbox{[}NB\+\_\+\+CASE\mbox{]}, int NB\+\_\+\+DES, int case\+\_\+courant\mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}, int \mbox{\hyperlink{structjoueur}{joueur}}, int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8h_a268e72abf1ade5615b319eb76fd74b71}{affichage\+\_\+joueur\+\_\+et\+\_\+des}} (SDL\+\_\+\+Renderer $\ast$rendu, int \mbox{\hyperlink{structjoueur}{joueur}}, int numero\+\_\+des)
+\begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du tour d\textquotesingle{}un joueur (prit en paramètre) et l\textquotesingle{}image du numéro du dé prit en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{joueur_8h_a98f9ed2c07e81050e124064a372009ff}\label{joueur_8h_a98f9ed2c07e81050e124064a372009ff}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou1}
+\item 
+\mbox{\Hypertarget{joueur_8h_a3ef5606b49d1450295fa00d16edb28a0}\label{joueur_8h_a3ef5606b49d1450295fa00d16edb28a0}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou2}
+\item 
+\mbox{\Hypertarget{joueur_8h_a0faa6fb1a9d45171d95f181223d6092e}\label{joueur_8h_a0faa6fb1a9d45171d95f181223d6092e}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou3}
+\item 
+\mbox{\Hypertarget{joueur_8h_a4ca572db777af61dbcdd46a4f25be0ea}\label{joueur_8h_a4ca572db777af61dbcdd46a4f25be0ea}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou4}
+\item 
+\mbox{\Hypertarget{joueur_8h_ac34c928f0004654769de10f7182e22cc}\label{joueur_8h_ac34c928f0004654769de10f7182e22cc}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries liste\+\_\+joueurs} \mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+les fonction prototypes de \mbox{\hyperlink{joueur_8c}{joueur.\+c}} 
+
+\begin{DoxyAuthor}{Auteur}
+Tessier Killian 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+5 
+\end{DoxyVersion}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}\label{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}} 
+\index{joueur.h@{joueur.h}!NB\_JOUEURS@{NB\_JOUEURS}}
+\index{NB\_JOUEURS@{NB\_JOUEURS}!joueur.h@{joueur.h}}
+\doxysubsubsection{\texorpdfstring{NB\_JOUEURS}{NB\_JOUEURS}}
+{\footnotesize\ttfamily \#define NB\+\_\+\+JOUEURS~4}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em NB\+\_\+\+JOUEURS} & le nombre de joueurs ici 4 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{joueur_8h_a268e72abf1ade5615b319eb76fd74b71}\label{joueur_8h_a268e72abf1ade5615b319eb76fd74b71}} 
+\index{joueur.h@{joueur.h}!affichage\_joueur\_et\_des@{affichage\_joueur\_et\_des}}
+\index{affichage\_joueur\_et\_des@{affichage\_joueur\_et\_des}!joueur.h@{joueur.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_joueur\_et\_des()}{affichage\_joueur\_et\_des()}}
+{\footnotesize\ttfamily void affichage\+\_\+joueur\+\_\+et\+\_\+des (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{int}]{joueur,  }\item[{int}]{numero\+\_\+des }\end{DoxyParamCaption})}
+
+
+
+La fonction affiche sur la fenêtre l\textquotesingle{}image du tour d\textquotesingle{}un joueur (prit en paramètre) et l\textquotesingle{}image du numéro du dé prit en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rendu} & Pointeur sur un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em joueurs} & Objet de type integer \\
+\hline
+{\em numero\+\_\+des} & Objet de type integer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{joueur_8h_a5332b2d1b6455fbf257110ba9505f174}\label{joueur_8h_a5332b2d1b6455fbf257110ba9505f174}} 
+\index{joueur.h@{joueur.h}!afficher\_joueur\_bouge@{afficher\_joueur\_bouge}}
+\index{afficher\_joueur\_bouge@{afficher\_joueur\_bouge}!joueur.h@{joueur.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_joueur\_bouge()}{afficher\_joueur\_bouge()}}
+{\footnotesize\ttfamily void afficher\+\_\+joueur\+\_\+bouge (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{fenetre,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{SDL\+\_\+\+Rect}]{cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{liste\+\_\+cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{NB\+\_\+\+DES,  }\item[{int}]{case\+\_\+courant\mbox{[}\+NB\+\_\+\+JOUEURS\mbox{]},  }\item[{int}]{joueurs,  }\item[{int}]{nb\+\_\+joueurs }\end{DoxyParamCaption})}
+
+
+
+La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fenetre} & Pointeur sur un objet de type SDL\+\_\+\+Window \\
+\hline
+{\em rendu} & Pointeur sur un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type SDL\+\_\+\+Rect déjà initialisé \\
+\hline
+{\em liste\+\_\+cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type integer \\
+\hline
+{\em NB\+\_\+\+DES} & Objet de type integer \\
+\hline
+{\em case\+\_\+courant\mbox{[}\+NB\+\_\+\+JOUEURS\mbox{]}} & Tableau de taille NB\+\_\+\+JOUEURS d\textquotesingle{}objet de type integer \\
+\hline
+{\em joueurs} & Objet de type integer \\
+\hline
+{\em nb\+\_\+joueurs} & Objet de type integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bogue}
+\item[\mbox{\hyperlink{bug__bug000001}{Bogue}}]en effectuant la réactualisation du rendu cela créer un bug qui affiche un joueur en deux fois ou n\textquotesingle{}affiche pas le joueur. \end{DoxyRefDesc}
+\mbox{\Hypertarget{joueur_8h_a8bf49192641348dfd73dd4a4d50c7389}\label{joueur_8h_a8bf49192641348dfd73dd4a4d50c7389}} 
+\index{joueur.h@{joueur.h}!afficher\_joueur\_case@{afficher\_joueur\_case}}
+\index{afficher\_joueur\_case@{afficher\_joueur\_case}!joueur.h@{joueur.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_joueur\_case()}{afficher\_joueur\_case()}}
+{\footnotesize\ttfamily void afficher\+\_\+joueur\+\_\+case (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{SDL\+\_\+\+Rect}]{cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]},  }\item[{int}]{case\+\_\+courant\mbox{[}\+NB\+\_\+\+JOUEURS\mbox{]},  }\item[{int}]{joueurs }\end{DoxyParamCaption})}
+
+
+
+La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) à tel position à l\textquotesingle{}aide des coordonnées de la case (prit en paramètre). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rendu} & Pointeur sur un objet de type SDL\+\_\+\+Renderer \\
+\hline
+{\em cases\mbox{[}\+NB\+\_\+\+CASE\mbox{]}} & Tableau de taille NB\+\_\+\+CASE d\textquotesingle{}objet de type SDL\+\_\+\+Rect déjà initialisé \\
+\hline
+{\em case\+\_\+courant\mbox{[}\+NB\+\_\+\+JOUEURS\mbox{]}} & Tableau de taille NB\+\_\+\+JOUEURS d\textquotesingle{}objet de type integer \\
+\hline
+{\em joueurs} & Objet de type integer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{joueur_8h_a10a8aeaedd187b8d1e18a820b40d1b2f}\label{joueur_8h_a10a8aeaedd187b8d1e18a820b40d1b2f}} 
+\index{joueur.h@{joueur.h}!effet\_case@{effet\_case}}
+\index{effet\_case@{effet\_case}!joueur.h@{joueur.h}}
+\doxysubsubsection{\texorpdfstring{effet\_case()}{effet\_case()}}
+{\footnotesize\ttfamily void effet\+\_\+case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$}]{jou }\end{DoxyParamCaption})}
+
+
+
+La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l\textquotesingle{}effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jou} & Pointeur sur un objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} \\
+\hline
+\end{DoxyParams}

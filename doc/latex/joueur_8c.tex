@@ -17,13 +17,13 @@ La création des joueurs de notre jeu.
 \item 
 \mbox{\Hypertarget{joueur_8c_ae20d912bd5019ea22571ce4f8bbbcb47}\label{joueur_8c_ae20d912bd5019ea22571ce4f8bbbcb47}} 
 void \mbox{\hyperlink{joueur_8c_ae20d912bd5019ea22571ce4f8bbbcb47}{crea\+\_\+joueurs}} ()
-\begin{DoxyCompactList}\small\item\em initialisation de 4 pointeurs sur objet de type t\+\_\+joueur puis les regroupe dans un tableau de pointeur sur objet de type t\+\_\+joueur afin d\textquotesingle{}initialiser les 4 potentiels joueurs de notre partie. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{joueur_8c_a10a8aeaedd187b8d1e18a820b40d1b2f}{effet\+\_\+case}} (\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$jou)
+\begin{DoxyCompactList}\small\item\em initialisation de 4 pointeurs sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} puis les regroupe dans un tableau de pointeur sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} afin d\textquotesingle{}initialiser les 4 potentiels joueurs de notre partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_a10a8aeaedd187b8d1e18a820b40d1b2f}{effet\+\_\+case}} (\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$jou)
 \begin{DoxyCompactList}\small\item\em La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l\textquotesingle{}effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{joueur_8c_ab943ad925be00a5e4b5f73a391600f37}{afficher\+\_\+joueur\+\_\+case}} (SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int case\+\_\+courant\mbox{[}NB\+\_\+\+JOUEURS\mbox{]}, int joueurs)
+void \mbox{\hyperlink{joueur_8c_ab943ad925be00a5e4b5f73a391600f37}{afficher\+\_\+joueur\+\_\+case}} (SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int case\+\_\+courant\mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}, int joueurs)
 \begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) à tel position à l\textquotesingle{}aide des coordonnées de la case (prit en paramètre). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{joueur_8c_ada85198a1327305e531e4c0564359d59}{afficher\+\_\+joueur\+\_\+bouge}} (SDL\+\_\+\+Window $\ast$fenetre, SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int liste\+\_\+cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int NB\+\_\+\+DES, int case\+\_\+courant\mbox{[}NB\+\_\+\+JOUEURS\mbox{]}, int joueurs, int nb\+\_\+joueurs)
-\begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre le joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8c_ada85198a1327305e531e4c0564359d59}{afficher\+\_\+joueur\+\_\+bouge}} (SDL\+\_\+\+Window $\ast$fenetre, SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int liste\+\_\+cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int NB\+\_\+\+DES, int case\+\_\+courant\mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}, int joueurs, int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{joueur_8c_a268e72abf1ade5615b319eb76fd74b71}{affichage\+\_\+joueur\+\_\+et\+\_\+des}} (SDL\+\_\+\+Renderer $\ast$rendu, int \mbox{\hyperlink{structjoueur}{joueur}}, int numero\+\_\+des)
 \begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du tour d\textquotesingle{}un joueur (prit en paramètre) et l\textquotesingle{}image du numéro du dé prit en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -83,7 +83,7 @@ La fonction affiche sur la fenêtre l\textquotesingle{}image du tour d\textquote
 
 
 
-La fonction affiche sur la fenêtre le joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. 
+La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position initiale+le numero de dé (avec NB\+\_\+\+DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction. 
 
 
 \begin{DoxyParams}{Paramètres}
@@ -131,7 +131,7 @@ La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en 
 \index{joueur.c@{joueur.c}!effet\_case@{effet\_case}}
 \index{effet\_case@{effet\_case}!joueur.c@{joueur.c}}
 \doxysubsubsection{\texorpdfstring{effet\_case()}{effet\_case()}}
-{\footnotesize\ttfamily void effet\+\_\+case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$}]{jou }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void effet\+\_\+case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$}]{jou }\end{DoxyParamCaption})}
 
 
 
@@ -139,6 +139,6 @@ La fonction affiche sur le terminal la position du joueur (prit en paramètre) a
 
 
 \begin{DoxyParams}{Paramètres}
-{\em jou} & Pointeur sur un objet de type t\+\_\+joueur \\
+{\em jou} & Pointeur sur un objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} \\
 \hline
 \end{DoxyParams}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sdl_5fafficheruneimage_23',['SDL_AfficherUneImage',['../petite__fonction_8c.html#ad049bc7aea54b9afd7d083055f877647',1,'petite_fonction.c']]],
-  ['sdl_5fexitwitherror_24',['SDL_ExitWithError',['../petite__fonction_8c.html#abed124ab111ee095d48f08e2a3ea4446',1,'petite_fonction.c']]]
+  ['nb_5fjoueurs_31',['NB_JOUEURS',['../joueur_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8',1,'joueur.h']]],
+  ['nb_5ftours_32',['NB_TOURS',['../partie_8h.html#a215cffcfd43dd154d2fe0eb9b6998f2d',1,'partie.h']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_20party_52',['INFO PARTY',['../index.html',1,'']]]
+  ['info_20party_98',['INFO PARTY',['../index.html',1,'']]]
 ];

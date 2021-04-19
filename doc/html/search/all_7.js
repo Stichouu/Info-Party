@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ordre_5fjeu_19',['ordre_jeu',['../partie_8c.html#a754dfc59a1b95f2dd0af8a473a81f36c',1,'partie.c']]]
+  ['liste_20des_20bogues_23',['Liste des bogues',['../bug.html',1,'']]],
+  ['liste_5fvide_5fplat_24',['liste_vide_plat',['../plateau_8c.html#a222a1a922637da84d65850892fd7035b',1,'liste_vide_plat():&#160;plateau.c'],['../plateau_8h.html#a222a1a922637da84d65850892fd7035b',1,'liste_vide_plat():&#160;plateau.c']]]
 ];

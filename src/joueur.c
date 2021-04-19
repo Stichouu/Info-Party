@@ -106,7 +106,7 @@ void afficher_joueur_case(SDL_Renderer * rendu, SDL_Rect cases[NB_CASE], int cas
 * \param case_courant[NB_JOUEURS] Tableau de taille NB_JOUEURS d'objet de type integer
 * \param joueurs Objet de type integer 
 * \param nb_joueurs Objet de type integer 
-* \brief La fonction affiche sur la fenêtre le joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position 
+* \brief La fonction affiche sur la fenêtre l'image du joueur (prit en paramètre) après avoir effectuer son déplacement de sa position initiale à sa position 
 initiale+le numero de dé (avec NB_DES) en réactualisant à chaque fois le rendu de la fenêtre à chaque utilisation de la fonction.
 * \bug en effectuant la réactualisation du rendu cela créer un bug qui affiche un joueur en deux fois ou n'affiche pas le joueur.
 */

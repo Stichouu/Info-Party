@@ -12,11 +12,12 @@
 * \brief Le plateau de notre jeu
 */
 
-/**
-* \brief Mise en place par pointeurs des primitives d'accès à une liste
-*/
 /* Mise en place par pointeurs des primitives d'accès à une liste */
 
+/**
+* \fn void init_list_plat()
+* \brief On initialise notre liste.
+*/
 void init_list_plat(){
   drapeau = malloc(sizeof(t_case));
   drapeau->preced = drapeau;
@@ -24,44 +25,82 @@ void init_list_plat(){
   ec = drapeau;
 }
 
+/**
+* \fn int liste_vide_plat
+* \brief Une fonction booléenne qui renvoie vrai si la liste est vide.
+*/
 int liste_vide_plat(){
   return (drapeau->preced == drapeau);
 }
 
+/**
+* \fn int hors_liste_plat()
+*\brief Une fonction booléenne qui renvoie vrai si l'élément courant est sorti de la liste.
+*/
 int hors_liste_plat(){
   return(ec == drapeau);
 }
 
+/**
+* \fn en_tete_plat()
+* \brief Cette fonction place l'élément courant, à l'élément en tête de liste si la liste n'est pas vide.
+*/
 void en_tete_plat(){
   if(!liste_vide_plat())
     ec = drapeau->suiv;
 }
 
+/**
+* \fn en_queue_plat()
+* \brief Cette fonction place l'élément courant, à l'élément en queue de liste si la liste n'est pas vide.
+*/
 void en_queue_plat(){
   if(!liste_vide_plat())
     ec = drapeau->preced;
 }
 
+/**
+* \fn void precedent_plat()
+* \brief Place l'élément courant à l'élément précédent si nous ne sommes pas sorti de la liste.
+*/
 void precedent_plat(){
   if(!hors_liste_plat())
     ec = ec->preced;
 }
 
+/**
+* \fn void suivant_plat()
+* \brief Place l'élément courant à l'élément suivant si nous ne sommes pas sorti de la liste.
+*/
 void suivant_plat(){
   if(!hors_liste_plat())
     ec = ec->suiv;
 }
 
+/**
+* \fn void effet_case_plat(t_effet_case * e)
+* \param adresse d'un type enum correspondant à un effet de case.
+* \brief Renvoie à l'adresse entrée en paramètre l'effet de l'élément courant.
+*/
 void effet_case_plat(t_effet_case * e){
   if(!hors_liste_plat())
     *e = ec->effet;
 }
 
+/**
+* \fn void modif_case_plat(t_effet_case e)
+* \param type enum correspondant à un effet de case.
+* \brief Donne à l'effet de l'élément courant la valeur entrée en paramètre.
+*/
 void modif_case_plat(t_effet_case e){
   if(!hors_liste_plat())
     ec->effet = e;
 }
 
+/**
+* \fn void oter_case_plat()
+* \brief Si nous ne sommes pas sortis de la liste, supprimer l'élément courant.
+*/
 void oter_case_plat(){
   t_case * sup;
   sup=ec;
@@ -73,6 +112,11 @@ void oter_case_plat(){
   }
 }
 
+/**
+* \fn void ajouter_droit_plat(t_effet_case e)
+* \param type enum correspondant à un effet de case.
+* \brief Ajoute à droite de l'élément courant une case avec pour effet la valeur entrée en paramètre.
+*/
 void ajout_droit_plat(t_effet_case e){
   t_case * nouv;
   nouv = malloc(sizeof(t_case));
@@ -86,6 +130,11 @@ void ajout_droit_plat(t_effet_case e){
   }
 }
 
+/**
+* \fn void ajouter_droit_plat(t_effet_case e)
+* \param type enum correspondant à un effet de case.
+* \brief Ajoute à gauche de l'élément courant une case avec pour effet la valeur entrée en paramètre.
+*/
 void ajout_gauche_plat(t_effet_case e){
   t_case * nouv;
   nouv = malloc(sizeof(t_case));
@@ -101,6 +150,12 @@ void ajout_gauche_plat(t_effet_case e){
 
 /* Fin des primitives */
 
+/**
+* \fn void crea_plat(int liste_case[NB_CASE],SDL_Rect cases[NB_CASE])
+* \param liste_cases[NB_CASE] Tableau de taille NB_CASE d'objet de type integer
+* \param cases[NB_CASE] Tableau de taille NB_CASE d'objet de type SDL_Rect déjà initialisé
+* \brief création du plateau et initialisation du plateau
+*/
 /* Création du plateau */
 void crea_plat(int liste_case[NB_CASE],SDL_Rect cases[NB_CASE]){
   //initialistaion variables
@@ -164,6 +219,14 @@ void crea_plat(int liste_case[NB_CASE],SDL_Rect cases[NB_CASE]){
   en_tete_plat();
 }
 
+/**
+* \fn void afficher_plateau(SDL_Window *fenetre,SDL_Renderer * rendu,SDL_Rect cases[NB_CASE],int liste_case[NB_CASE])
+* \param fenetre Pointeur sur un objet de type SDL_Window
+* \param rendu Pointeur sur un objet de type SDL_Renderer
+* \param liste_cases[NB_CASE] Tableau de taille NB_CASE d'objet de type integer
+* \param cases[NB_CASE] Tableau de taille NB_CASE d'objet de type SDL_Rect déjà initialisé
+* \brief affichage du plateau
+*/
 /*affichage du plateau */
 void afficher_plateau(SDL_Window *fenetre,SDL_Renderer * rendu,SDL_Rect cases[NB_CASE],int liste_case[NB_CASE]){
   SDL_Surface *image=NULL;

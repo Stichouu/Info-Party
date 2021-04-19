@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['liste_20des_20bogues_14',['Liste des bogues',['../bug.html',1,'']]]
+  ['info_20party_18',['INFO PARTY',['../index.html',1,'']]],
+  ['init_5flist_5fplat_19',['init_list_plat',['../plateau_8c.html#ac9826cf0408931855ccddcb1318a3bba',1,'init_list_plat():&#160;plateau.c'],['../plateau_8h.html#ac9826cf0408931855ccddcb1318a3bba',1,'init_list_plat():&#160;plateau.c']]]
 ];

@@ -1,11 +1,22 @@
 #ifndef _JOUEUR_H_
 #define _JOUEUR_H_
-
+/**
+* \file joueur.h
+* \author Tessier Killian
+* \version 1.5
+* \brief les fonction prototypes de joueur.c
+*/
 #include "plateau.h"
-
+/**
+*\param NB_JOUEURS le nombre de joueurs ici 4
+*/
 #define NB_JOUEURS 4
 
-
+/**
+* \struct t_joueur
+* \brief Objet joueur.
+*Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,de badges et le numéro du joueur
+*/
 typedef struct joueur{
   t_case * position;
   int nb_pieces;

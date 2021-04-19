@@ -69,20 +69,20 @@ $(function() {
 <div class="title">partie.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PARTIE_H_</span></div>
+<a href="partie_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PARTIE_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _PARTIE_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;joueur.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;plateau.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define NB_TOURS 20</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="partie_8c.html#a754dfc59a1b95f2dd0af8a473a81f36c">ordre_jeu</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="partie_8c.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">une_partie</a>(SDL_Window *fenetre,SDL_Renderer * rendu,SDL_Rect cases[NB_CASE],<span class="keywordtype">int</span> liste_case[NB_CASE],<span class="keywordtype">int</span> nb_tours,<span class="keywordtype">int</span> nb_joueurs);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="apartie_8c_html_a040b9000aaa98f45c5ce0eaaf0d8aa89"><div class="ttname"><a href="partie_8c.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">une_partie</a></div><div class="ttdeci">void une_partie(SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE], int nb_tours, int nb_joueurs)</div><div class="ttdoc">la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appell...</div><div class="ttdef"><b>Definition:</b> partie.c:129</div></div>
-<div class="ttc" id="apartie_8c_html_a754dfc59a1b95f2dd0af8a473a81f36c"><div class="ttname"><a href="partie_8c.html#a754dfc59a1b95f2dd0af8a473a81f36c">ordre_jeu</a></div><div class="ttdeci">void ordre_jeu()</div><div class="ttdoc">La fonction va définir l'ordre de jeu en début de partie.</div><div class="ttdef"><b>Definition:</b> partie.c:37</div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="joueur_8h.html">joueur.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="plateau_8h.html">plateau.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="partie_8h.html#a215cffcfd43dd154d2fe0eb9b6998f2d">   17</a></span>&#160;<span class="preprocessor">#define NB_TOURS 20</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="partie_8h.html#a754dfc59a1b95f2dd0af8a473a81f36c">ordre_jeu</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="partie_8h.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">une_partie</a>(SDL_Window *fenetre,SDL_Renderer * rendu,SDL_Rect cases[NB_CASE],<span class="keywordtype">int</span> liste_case[NB_CASE],<span class="keywordtype">int</span> nb_tours,<span class="keywordtype">int</span> nb_joueurs);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ajoueur_8h_html"><div class="ttname"><a href="joueur_8h.html">joueur.h</a></div><div class="ttdoc">les fonction prototypes de joueur.c</div></div>
+<div class="ttc" id="apartie_8h_html_a040b9000aaa98f45c5ce0eaaf0d8aa89"><div class="ttname"><a href="partie_8h.html#a040b9000aaa98f45c5ce0eaaf0d8aa89">une_partie</a></div><div class="ttdeci">void une_partie(SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE], int nb_tours, int nb_joueurs)</div><div class="ttdoc">la fonction va démarrer une partie en prenant le nombre de tours et de joueurs en paramètre en appell...</div><div class="ttdef"><b>Definition:</b> partie.c:129</div></div>
+<div class="ttc" id="apartie_8h_html_a754dfc59a1b95f2dd0af8a473a81f36c"><div class="ttname"><a href="partie_8h.html#a754dfc59a1b95f2dd0af8a473a81f36c">ordre_jeu</a></div><div class="ttdeci">void ordre_jeu()</div><div class="ttdoc">La fonction va définir l'ordre de jeu en début de partie.</div><div class="ttdef"><b>Definition:</b> partie.c:37</div></div>
+<div class="ttc" id="aplateau_8h_html"><div class="ttname"><a href="plateau_8h.html">plateau.h</a></div><div class="ttdoc">Les fonctions prototypes de plateau.c.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

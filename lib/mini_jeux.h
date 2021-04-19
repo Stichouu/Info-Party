@@ -1,6 +1,11 @@
 #ifndef _MINI_JEUX_H_
 #define _MINI_JEUX_H_
-
+/**
+* \file mini_jeux.h
+* \author Tessier Killian
+* \version 1.2
+* \brief Les fonctions prototypes de mini_jeux.c
+*/
  //mj = "mini-jeux"
  //vs2 = 2vs2
  //vs3 = 1vs3
@@ -9,9 +14,14 @@
  #define NB_MJ_NORM 8
  #define NB_MJ_VS2 2
  #define NB_MJ_VS3 2
-
+/**
+*\enum t_type_mj
+*/
 typedef enum {normal, vs2, vs3} t_type_mj;
 
+/**
+* \struct t_mj
+*/
 typedef struct mj{
   char * nom_mj;
   t_type_mj type_mj;
