@@ -85,6 +85,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoueur.html">joueur</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,de badges et le numéro du joueur.  <a href="structjoueur.html#details">Plus de détails...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -102,9 +103,9 @@ typedef struct <a class="el" href="structjoueur.html">joueur</a>&#160;</td><td c
 Fonctions</h2></td></tr>
 <tr class="memitem:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="memItemLeft" align="right" valign="top"><a id="ae20d912bd5019ea22571ce4f8bbbcb47"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#ae20d912bd5019ea22571ce4f8bbbcb47">crea_joueurs</a> ()</td></tr>
-<tr class="memdesc:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialisation de 4 pointeurs sur objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> puis les regroupe dans un tableau de pointeur sur objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> afin d'initialiser les 4 potentiels joueurs de notre partie. <br /></td></tr>
+<tr class="memdesc:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialisation de 4 pointeurs sur objet de type t_joueur puis les regroupe dans un tableau de pointeur sur objet de type t_joueur afin d'initialiser les 4 potentiels joueurs de notre partie. <br /></td></tr>
 <tr class="separator:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a> (<a class="el" href="structt__joueur.html">t_joueur</a> *jou)</td></tr>
+<tr class="memitem:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a> (<a class="el" href="structjoueur.html">t_joueur</a> *jou)</td></tr>
 <tr class="memdesc:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l'effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case).  <a href="joueur_8h.html#a10a8aeaedd187b8d1e18a820b40d1b2f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf49192641348dfd73dd4a4d50c7389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a8bf49192641348dfd73dd4a4d50c7389">afficher_joueur_case</a> (SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int case_courant[<a class="el" href="joueur_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8">NB_JOUEURS</a>], int <a class="el" href="structjoueur.html">joueur</a>)</td></tr>
@@ -120,19 +121,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joue
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a98f9ed2c07e81050e124064a372009ff"><td class="memItemLeft" align="right" valign="top"><a id="a98f9ed2c07e81050e124064a372009ff"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>jou1</b></td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a98f9ed2c07e81050e124064a372009ff">jou1</a></td></tr>
+<tr class="memdesc:a98f9ed2c07e81050e124064a372009ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">le joueur 1 <br /></td></tr>
 <tr class="separator:a98f9ed2c07e81050e124064a372009ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef5606b49d1450295fa00d16edb28a0"><td class="memItemLeft" align="right" valign="top"><a id="a3ef5606b49d1450295fa00d16edb28a0"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>jou2</b></td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a3ef5606b49d1450295fa00d16edb28a0">jou2</a></td></tr>
+<tr class="memdesc:a3ef5606b49d1450295fa00d16edb28a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">le joueur 2 <br /></td></tr>
 <tr class="separator:a3ef5606b49d1450295fa00d16edb28a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0faa6fb1a9d45171d95f181223d6092e"><td class="memItemLeft" align="right" valign="top"><a id="a0faa6fb1a9d45171d95f181223d6092e"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>jou3</b></td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a0faa6fb1a9d45171d95f181223d6092e">jou3</a></td></tr>
+<tr class="memdesc:a0faa6fb1a9d45171d95f181223d6092e"><td class="mdescLeft">&#160;</td><td class="mdescRight">le joueur 3 <br /></td></tr>
 <tr class="separator:a0faa6fb1a9d45171d95f181223d6092e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ca572db777af61dbcdd46a4f25be0ea"><td class="memItemLeft" align="right" valign="top"><a id="a4ca572db777af61dbcdd46a4f25be0ea"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>jou4</b></td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#a4ca572db777af61dbcdd46a4f25be0ea">jou4</a></td></tr>
+<tr class="memdesc:a4ca572db777af61dbcdd46a4f25be0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">le joueur 4 <br /></td></tr>
 <tr class="separator:a4ca572db777af61dbcdd46a4f25be0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34c928f0004654769de10f7182e22cc"><td class="memItemLeft" align="right" valign="top"><a id="ac34c928f0004654769de10f7182e22cc"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>liste_joueurs</b> [<a class="el" href="joueur_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8">NB_JOUEURS</a>]</td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8h.html#ac34c928f0004654769de10f7182e22cc">liste_joueurs</a> [<a class="el" href="joueur_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8">NB_JOUEURS</a>]</td></tr>
+<tr class="memdesc:ac34c928f0004654769de10f7182e22cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">la liste de tous les joueurs <br /></td></tr>
 <tr class="separator:ac34c928f0004654769de10f7182e22cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
@@ -345,7 +351,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void effet_case </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td>
           <td class="paramname"><em>jou</em></td><td>)</td>
           <td></td>
         </tr>
@@ -355,7 +361,7 @@ Variables</h2></td></tr>
 <p>La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l'effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">jou</td><td>Pointeur sur un objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> </td></tr>
+    <tr><td class="paramname">jou</td><td>Pointeur sur un objet de type t_joueur </td></tr>
   </table>
   </dd>
 </dl>

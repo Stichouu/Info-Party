@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['une_5fpartie_49',['une_partie',['../partie_8c.html#a040b9000aaa98f45c5ce0eaaf0d8aa89',1,'une_partie(SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE], int nb_tours, int nb_joueurs):&#160;partie.c'],['../partie_8h.html#a040b9000aaa98f45c5ce0eaaf0d8aa89',1,'une_partie(SDL_Window *fenetre, SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int liste_case[NB_CASE], int nb_tours, int nb_joueurs):&#160;partie.c']]]
+  ['t_5feffet_5fcase_57',['t_effet_case',['../plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989',1,'plateau.h']]],
+  ['t_5ftype_5fmj_58',['t_type_mj',['../mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829',1,'mini_jeux.h']]],
+  ['trie_59',['trie',['../partie_8c.html#ae389583e3483c08bcf1c4c95a941a7f3',1,'partie.c']]]
 ];

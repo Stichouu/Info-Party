@@ -89,7 +89,7 @@ void effet_case_plat(t_effet_case * e){
 
 /**
 * \fn void modif_case_plat(t_effet_case e)
-* \param type enum correspondant à un effet de case.
+* \param e Objet de type t_effet_case correspondant à un effet de case.
 * \brief Donne à l'effet de l'élément courant la valeur entrée en paramètre.
 */
 void modif_case_plat(t_effet_case e){
@@ -113,8 +113,8 @@ void oter_case_plat(){
 }
 
 /**
-* \fn void ajouter_droit_plat(t_effet_case e)
-* \param type enum correspondant à un effet de case.
+* \fn void ajout_droit_plat(t_effet_case e)
+* \param Objet de type t_effet_case correspondant à un effet de case.
 * \brief Ajoute à droite de l'élément courant une case avec pour effet la valeur entrée en paramètre.
 */
 void ajout_droit_plat(t_effet_case e){
@@ -131,8 +131,8 @@ void ajout_droit_plat(t_effet_case e){
 }
 
 /**
-* \fn void ajouter_droit_plat(t_effet_case e)
-* \param type enum correspondant à un effet de case.
+* \fn void ajout_gauche_plat(t_effet_case e)
+* \param Objet de type t_effet_case correspondant à un effet de case.
 * \brief Ajoute à gauche de l'élément courant une case avec pour effet la valeur entrée en paramètre.
 */
 void ajout_gauche_plat(t_effet_case e){

@@ -68,6 +68,11 @@ $(function() {
 <div class="title">Référence de la structure mj</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Un mini-jeu contient un pointeur sur le nom du mini-jeu,le type de mini-jeu et un pointeur sur une fonction d'un mini-jeu.  
+ <a href="structmj.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mini__jeux_8h_source.html">mini_jeux.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Attributs publics</h2></td></tr>
@@ -75,13 +80,23 @@ Attributs publics</h2></td></tr>
 char *&#160;</td><td class="memItemRight" valign="bottom"><b>nom_mj</b></td></tr>
 <tr class="separator:a758640e62716640c4df9e5321be5e667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8024c4df545a77adbd5c7bd27da0768"><td class="memItemLeft" align="right" valign="top"><a id="af8024c4df545a77adbd5c7bd27da0768"></a>
-t_type_mj&#160;</td><td class="memItemRight" valign="bottom"><b>type_mj</b></td></tr>
+<a class="el" href="mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829">t_type_mj</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type_mj</b></td></tr>
 <tr class="separator:af8024c4df545a77adbd5c7bd27da0768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbae77c8941bdb0e16fc69f026aec8b1"><td class="memItemLeft" align="right" valign="top"><a id="abbae77c8941bdb0e16fc69f026aec8b1"></a>
-<a class="el" href="structt__joueur.html">t_joueur</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>pt_fonc_mj</b> )(<a class="el" href="structt__joueur.html">t_joueur</a> **)</td></tr>
+<a class="el" href="structjoueur.html">t_joueur</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>pt_fonc_mj</b> )(<a class="el" href="structjoueur.html">t_joueur</a> **)</td></tr>
 <tr class="separator:abbae77c8941bdb0e16fc69f026aec8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Un mini-jeu contient un pointeur sur le nom du mini-jeu,le type de mini-jeu et un pointeur sur une fonction d'un mini-jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom_mj</td><td>Pointeur sur un objet de type char </td></tr>
+    <tr><td class="paramname">Objet</td><td>de type t_type_mj </td></tr>
+    <tr><td class="paramname">Pointeur</td><td>sur une fonction de type t_joueur avec en paramètre un pointeur sur un pointeur qui pointe un objet de type t_joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
 <li>lib/<a class="el" href="mini__jeux_8h_source.html">mini_jeux.h</a></li>
 </ul>
 </div><!-- contents -->

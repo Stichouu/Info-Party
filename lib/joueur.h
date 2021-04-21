@@ -13,9 +13,11 @@
 #define NB_JOUEURS 4
 
 /**
-* \struct t_joueur
-* \brief Objet joueur.
-*Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,de badges et le numéro du joueur
+* \struct joueur
+* \brief Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,de badges et le numéro du joueur
+* \param nb_pieces Objet de type int pour le nombre de pièces
+* \param nb_badges Objet de type int pour le nombre de badges
+* \param num_joueur Objet de type int pour le numéro du joueur
 */
 typedef struct joueur{
   t_case * position;
@@ -24,10 +26,15 @@ typedef struct joueur{
   int num_joueur;
 }t_joueur;
 
+/**\brief le joueur 1*/
 t_joueur * jou1;
+/**\brief le joueur 2*/
 t_joueur * jou2;
+/**\brief le joueur 3*/
 t_joueur * jou3;
+/**\brief le joueur 4*/
 t_joueur * jou4;
+/**\brief la liste de tous les joueurs*/
 t_joueur * liste_joueurs[NB_JOUEURS];
 
 void crea_joueurs();

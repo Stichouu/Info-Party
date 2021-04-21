@@ -79,22 +79,24 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"> #define NB_MJ_NORM 8</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"> #define NB_MJ_VS2 2</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"> #define NB_MJ_VS3 2</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {normal, vs2, vs3} t_type_mj;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structmj.html">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmj.html">mj</a>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">char</span> * nom_mj;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  t_type_mj type_mj;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="structt__joueur.html">t_joueur</a> (*pt_fonc_mj) (<a class="code" href="structt__joueur.html">t_joueur</a> **);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}<a class="code" href="structt__mj.html">t_mj</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="structt__mj.html">t_mj</a>  liste_mj_norm[NB_MJ_NORM];</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="structt__mj.html">t_mj</a>  liste_mj_vs2[NB_MJ_VS2];</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="structt__mj.html">t_mj</a>  liste_mj_vs3[NB_MJ_VS3];</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructmj_html"><div class="ttname"><a href="structmj.html">mj</a></div><div class="ttdef"><b>Definition:</b> mini_jeux.h:25</div></div>
-<div class="ttc" id="astructt__joueur_html"><div class="ttname"><a href="structt__joueur.html">t_joueur</a></div><div class="ttdoc">Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...</div></div>
-<div class="ttc" id="astructt__mj_html"><div class="ttname"><a href="structt__mj.html">t_mj</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {normal, vs2, vs3} <a class="code" href="mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829">t_type_mj</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structmj.html">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structmj.html">mj</a>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">char</span> * nom_mj;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829">t_type_mj</a> type_mj;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="structjoueur.html">t_joueur</a> (*pt_fonc_mj) (<a class="code" href="structjoueur.html">t_joueur</a> **);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}<a class="code" href="structmj.html">t_mj</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mini__jeux_8h.html#a2714735efc35743b4bdaf936aec87ade">   39</a></span>&#160;<a class="code" href="structmj.html">t_mj</a>  <a class="code" href="mini__jeux_8h.html#a2714735efc35743b4bdaf936aec87ade">liste_mj_norm</a>[NB_MJ_NORM];</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="mini__jeux_8h.html#accd5715dc9f248a2535bd2f8695f8ad6">   41</a></span>&#160;<a class="code" href="structmj.html">t_mj</a>  <a class="code" href="mini__jeux_8h.html#accd5715dc9f248a2535bd2f8695f8ad6">liste_mj_vs2</a>[NB_MJ_VS2];</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="mini__jeux_8h.html#ac01ae7c9cb2efbfbfed4615b31c431a1">   43</a></span>&#160;<a class="code" href="structmj.html">t_mj</a>  <a class="code" href="mini__jeux_8h.html#ac01ae7c9cb2efbfbfed4615b31c431a1">liste_mj_vs3</a>[NB_MJ_VS3];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="amini__jeux_8h_html_a2714735efc35743b4bdaf936aec87ade"><div class="ttname"><a href="mini__jeux_8h.html#a2714735efc35743b4bdaf936aec87ade">liste_mj_norm</a></div><div class="ttdeci">t_mj liste_mj_norm[NB_MJ_NORM]</div><div class="ttdef"><b>Definition:</b> mini_jeux.h:39</div></div>
+<div class="ttc" id="amini__jeux_8h_html_a847d168aac3adb4dc6eaff6ceb147829"><div class="ttname"><a href="mini__jeux_8h.html#a847d168aac3adb4dc6eaff6ceb147829">t_type_mj</a></div><div class="ttdeci">t_type_mj</div><div class="ttdoc">Une énumération de tous les types de mini-jeux.</div><div class="ttdef"><b>Definition:</b> mini_jeux.h:24</div></div>
+<div class="ttc" id="amini__jeux_8h_html_ac01ae7c9cb2efbfbfed4615b31c431a1"><div class="ttname"><a href="mini__jeux_8h.html#ac01ae7c9cb2efbfbfed4615b31c431a1">liste_mj_vs3</a></div><div class="ttdeci">t_mj liste_mj_vs3[NB_MJ_VS3]</div><div class="ttdef"><b>Definition:</b> mini_jeux.h:43</div></div>
+<div class="ttc" id="amini__jeux_8h_html_accd5715dc9f248a2535bd2f8695f8ad6"><div class="ttname"><a href="mini__jeux_8h.html#accd5715dc9f248a2535bd2f8695f8ad6">liste_mj_vs2</a></div><div class="ttdeci">t_mj liste_mj_vs2[NB_MJ_VS2]</div><div class="ttdef"><b>Definition:</b> mini_jeux.h:41</div></div>
+<div class="ttc" id="astructjoueur_html"><div class="ttname"><a href="structjoueur.html">joueur</a></div><div class="ttdoc">Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,de badges et le numé...</div><div class="ttdef"><b>Definition:</b> joueur.h:22</div></div>
+<div class="ttc" id="astructmj_html"><div class="ttname"><a href="structmj.html">mj</a></div><div class="ttdoc">Un mini-jeu contient un pointeur sur le nom du mini-jeu,le type de mini-jeu et un pointeur sur une fo...</div><div class="ttdef"><b>Definition:</b> mini_jeux.h:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -10,7 +10,7 @@ les fonction prototypes de \mbox{\hyperlink{joueur_8c}{joueur.\+c}}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structjoueur}{joueur}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Il prend en compte un objet t\+\_\+case,3 objets de type integer pour le nb de pièces,de badges et le numéro du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,8 +27,8 @@ typedef struct \mbox{\hyperlink{structjoueur}{joueur}} {\bfseries t\+\_\+joueur}
 \item 
 \mbox{\Hypertarget{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}\label{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}} 
 void \mbox{\hyperlink{joueur_8h_ae20d912bd5019ea22571ce4f8bbbcb47}{crea\+\_\+joueurs}} ()
-\begin{DoxyCompactList}\small\item\em initialisation de 4 pointeurs sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} puis les regroupe dans un tableau de pointeur sur objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} afin d\textquotesingle{}initialiser les 4 potentiels joueurs de notre partie. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{joueur_8h_a10a8aeaedd187b8d1e18a820b40d1b2f}{effet\+\_\+case}} (\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$jou)
+\begin{DoxyCompactList}\small\item\em initialisation de 4 pointeurs sur objet de type t\+\_\+joueur puis les regroupe dans un tableau de pointeur sur objet de type t\+\_\+joueur afin d\textquotesingle{}initialiser les 4 potentiels joueurs de notre partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{joueur_8h_a10a8aeaedd187b8d1e18a820b40d1b2f}{effet\+\_\+case}} (\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$jou)
 \begin{DoxyCompactList}\small\item\em La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l\textquotesingle{}effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{joueur_8h_a8bf49192641348dfd73dd4a4d50c7389}{afficher\+\_\+joueur\+\_\+case}} (SDL\+\_\+\+Renderer $\ast$rendu, SDL\+\_\+\+Rect cases\mbox{[}NB\+\_\+\+CASE\mbox{]}, int case\+\_\+courant\mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}, int \mbox{\hyperlink{structjoueur}{joueur}})
 \begin{DoxyCompactList}\small\item\em La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en paramètre) à tel position à l\textquotesingle{}aide des coordonnées de la case (prit en paramètre). \end{DoxyCompactList}\item 
@@ -40,20 +40,20 @@ void \mbox{\hyperlink{joueur_8h_a268e72abf1ade5615b319eb76fd74b71}{affichage\+\_
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{joueur_8h_a98f9ed2c07e81050e124064a372009ff}\label{joueur_8h_a98f9ed2c07e81050e124064a372009ff}} 
-\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou1}
-\item 
+\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$ \mbox{\hyperlink{joueur_8h_a98f9ed2c07e81050e124064a372009ff}{jou1}}
+\begin{DoxyCompactList}\small\item\em le joueur 1 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{joueur_8h_a3ef5606b49d1450295fa00d16edb28a0}\label{joueur_8h_a3ef5606b49d1450295fa00d16edb28a0}} 
-\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou2}
-\item 
+\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$ \mbox{\hyperlink{joueur_8h_a3ef5606b49d1450295fa00d16edb28a0}{jou2}}
+\begin{DoxyCompactList}\small\item\em le joueur 2 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{joueur_8h_a0faa6fb1a9d45171d95f181223d6092e}\label{joueur_8h_a0faa6fb1a9d45171d95f181223d6092e}} 
-\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou3}
-\item 
+\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$ \mbox{\hyperlink{joueur_8h_a0faa6fb1a9d45171d95f181223d6092e}{jou3}}
+\begin{DoxyCompactList}\small\item\em le joueur 3 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{joueur_8h_a4ca572db777af61dbcdd46a4f25be0ea}\label{joueur_8h_a4ca572db777af61dbcdd46a4f25be0ea}} 
-\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries jou4}
-\item 
+\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$ \mbox{\hyperlink{joueur_8h_a4ca572db777af61dbcdd46a4f25be0ea}{jou4}}
+\begin{DoxyCompactList}\small\item\em le joueur 4 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{joueur_8h_ac34c928f0004654769de10f7182e22cc}\label{joueur_8h_ac34c928f0004654769de10f7182e22cc}} 
-\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$ {\bfseries liste\+\_\+joueurs} \mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$ \mbox{\hyperlink{joueur_8h_ac34c928f0004654769de10f7182e22cc}{liste\+\_\+joueurs}} \mbox{[}\mbox{\hyperlink{joueur_8h_afdb4f6f91f985d95ef85c525e9c6f3e8}{NB\+\_\+\+JOUEURS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em la liste de tous les joueurs \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -157,7 +157,7 @@ La fonction affiche sur la fenêtre l\textquotesingle{}image du joueur (prit en 
 \index{joueur.h@{joueur.h}!effet\_case@{effet\_case}}
 \index{effet\_case@{effet\_case}!joueur.h@{joueur.h}}
 \doxysubsubsection{\texorpdfstring{effet\_case()}{effet\_case()}}
-{\footnotesize\ttfamily void effet\+\_\+case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} $\ast$}]{jou }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void effet\+\_\+case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjoueur}{t\+\_\+joueur}} $\ast$}]{jou }\end{DoxyParamCaption})}
 
 
 
@@ -165,6 +165,6 @@ La fonction affiche sur le terminal la position du joueur (prit en paramètre) a
 
 
 \begin{DoxyParams}{Paramètres}
-{\em jou} & Pointeur sur un objet de type \mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} \\
+{\em jou} & Pointeur sur un objet de type t\+\_\+joueur \\
 \hline
 \end{DoxyParams}

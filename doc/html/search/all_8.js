@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['menu_25',['menu',['../menu_8c.html#a0be26bb4b74a85c4fe2e61797174ac7e',1,'menu(SDL_Window *fenetre, int *joueur, int *tour, int *quitter):&#160;menu.c'],['../petite__fonction_8h.html#a0be26bb4b74a85c4fe2e61797174ac7e',1,'menu(SDL_Window *fenetre, int *joueur, int *tour, int *quitter):&#160;menu.c']]],
-  ['menu_2ec_26',['menu.c',['../menu_8c.html',1,'']]],
-  ['mini_5fjeux_2ec_27',['mini_jeux.c',['../mini__jeux_8c.html',1,'']]],
-  ['mini_5fjeux_2eh_28',['mini_jeux.h',['../mini__jeux_8h.html',1,'']]],
-  ['mj_29',['mj',['../structmj.html',1,'']]],
-  ['modif_5fcase_5fplat_30',['modif_case_plat',['../plateau_8c.html#a50e5ac4dba7ad73428e809009cffe1ea',1,'modif_case_plat(t_effet_case e):&#160;plateau.c'],['../plateau_8h.html#a50e5ac4dba7ad73428e809009cffe1ea',1,'modif_case_plat(t_effet_case e):&#160;plateau.c']]]
+  ['liste_20des_20bogues_31',['Liste des bogues',['../bug.html',1,'']]],
+  ['liste_5fjoueurs_32',['liste_joueurs',['../joueur_8h.html#ac34c928f0004654769de10f7182e22cc',1,'joueur.h']]],
+  ['liste_5fmj_5fnorm_33',['liste_mj_norm',['../mini__jeux_8h.html#a2714735efc35743b4bdaf936aec87ade',1,'mini_jeux.h']]],
+  ['liste_5fmj_5fvs2_34',['liste_mj_vs2',['../mini__jeux_8h.html#accd5715dc9f248a2535bd2f8695f8ad6',1,'mini_jeux.h']]],
+  ['liste_5fmj_5fvs3_35',['liste_mj_vs3',['../mini__jeux_8h.html#ac01ae7c9cb2efbfbfed4615b31c431a1',1,'mini_jeux.h']]],
+  ['liste_5fvide_5fplat_36',['liste_vide_plat',['../plateau_8c.html#a222a1a922637da84d65850892fd7035b',1,'liste_vide_plat():&#160;plateau.c'],['../plateau_8h.html#a222a1a922637da84d65850892fd7035b',1,'liste_vide_plat():&#160;plateau.c']]]
 ];

@@ -86,6 +86,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcase__jeu.html">case_jeu</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur la case suivante.  <a href="structcase__jeu.html#details">Plus de détails...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -102,7 +103,7 @@ typedef struct <a class="el" href="structcase__jeu.html">case_jeu</a>&#160;</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Énumérations</h2></td></tr>
-<tr class="memitem:adf2dd3bfd1fefe666a6fe39bc1027989"><td class="memItemLeft" align="right" valign="top"><a id="adf2dd3bfd1fefe666a6fe39bc1027989"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>t_effet_case</b> { <br />
+<tr class="memitem:adf2dd3bfd1fefe666a6fe39bc1027989"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> { <br />
 &#160;&#160;<b>depart</b>
 , <b>bleu</b>
 , <b>rouge</b>
@@ -112,6 +113,7 @@ typedef struct <a class="el" href="structcase__jeu.html">case_jeu</a>&#160;</td>
 , <b>mechant</b>
 <br />
  }</td></tr>
+<tr class="memdesc:adf2dd3bfd1fefe666a6fe39bc1027989"><td class="mdescLeft">&#160;</td><td class="mdescRight">les effets possibles d'une case.  <a href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">Plus de détails...</a><br /></td></tr>
 <tr class="separator:adf2dd3bfd1fefe666a6fe39bc1027989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -144,21 +146,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a67c6fa9868404662e958f04de91e3b1f">suivant_plat</a> ()</td></tr>
 <tr class="memdesc:a67c6fa9868404662e958f04de91e3b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place l'élément courant à l'élément suivant si nous ne sommes pas sorti de la liste. <br /></td></tr>
 <tr class="separator:a67c6fa9868404662e958f04de91e3b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6480f80360bafa12851c636584ce7c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#aa6480f80360bafa12851c636584ce7c3">effet_case_plat</a> (t_effet_case *e)</td></tr>
+<tr class="memitem:aa6480f80360bafa12851c636584ce7c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#aa6480f80360bafa12851c636584ce7c3">effet_case_plat</a> (<a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> *e)</td></tr>
 <tr class="memdesc:aa6480f80360bafa12851c636584ce7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie à l'adresse entrée en paramètre l'effet de l'élément courant.  <a href="plateau_8h.html#aa6480f80360bafa12851c636584ce7c3">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa6480f80360bafa12851c636584ce7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e5ac4dba7ad73428e809009cffe1ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a50e5ac4dba7ad73428e809009cffe1ea">modif_case_plat</a> (t_effet_case e)</td></tr>
+<tr class="memitem:a50e5ac4dba7ad73428e809009cffe1ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a50e5ac4dba7ad73428e809009cffe1ea">modif_case_plat</a> (<a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> e)</td></tr>
 <tr class="memdesc:a50e5ac4dba7ad73428e809009cffe1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne à l'effet de l'élément courant la valeur entrée en paramètre.  <a href="plateau_8h.html#a50e5ac4dba7ad73428e809009cffe1ea">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a50e5ac4dba7ad73428e809009cffe1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac761a8a8eaacf144008b42d081928381"><td class="memItemLeft" align="right" valign="top"><a id="ac761a8a8eaacf144008b42d081928381"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#ac761a8a8eaacf144008b42d081928381">oter_case_plat</a> ()</td></tr>
 <tr class="memdesc:ac761a8a8eaacf144008b42d081928381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si nous ne sommes pas sortis de la liste, supprimer l'élément courant. <br /></td></tr>
 <tr class="separator:ac761a8a8eaacf144008b42d081928381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06285a995ba9c99c736c63c8c37c9b3a"><td class="memItemLeft" align="right" valign="top"><a id="a06285a995ba9c99c736c63c8c37c9b3a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ajout_droit_plat</b> (t_effet_case e)</td></tr>
+<tr class="memitem:a06285a995ba9c99c736c63c8c37c9b3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a06285a995ba9c99c736c63c8c37c9b3a">ajout_droit_plat</a> (<a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> e)</td></tr>
+<tr class="memdesc:a06285a995ba9c99c736c63c8c37c9b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute à droite de l'élément courant une case avec pour effet la valeur entrée en paramètre.  <a href="plateau_8h.html#a06285a995ba9c99c736c63c8c37c9b3a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a06285a995ba9c99c736c63c8c37c9b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53eb773385bf1dcd36b7aa34f0185b96"><td class="memItemLeft" align="right" valign="top"><a id="a53eb773385bf1dcd36b7aa34f0185b96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ajout_gauche_plat</b> (t_effet_case e)</td></tr>
+<tr class="memitem:a53eb773385bf1dcd36b7aa34f0185b96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a53eb773385bf1dcd36b7aa34f0185b96">ajout_gauche_plat</a> (<a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> e)</td></tr>
+<tr class="memdesc:a53eb773385bf1dcd36b7aa34f0185b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute à gauche de l'élément courant une case avec pour effet la valeur entrée en paramètre.  <a href="plateau_8h.html#a53eb773385bf1dcd36b7aa34f0185b96">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a53eb773385bf1dcd36b7aa34f0185b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a81d34d64f887ad25b1a55247154210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a0a81d34d64f887ad25b1a55247154210">crea_plat</a> (int liste_case[NB_CASE], SDL_Rect cases[NB_CASE])</td></tr>
 <tr class="memdesc:a0a81d34d64f887ad25b1a55247154210"><td class="mdescLeft">&#160;</td><td class="mdescRight">création du plateau et initialisation du plateau  <a href="plateau_8h.html#a0a81d34d64f887ad25b1a55247154210">Plus de détails...</a><br /></td></tr>
@@ -169,18 +171,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ajout_gauche_plat</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab6d598e6e240282f50e383fe469f24d5"><td class="memItemLeft" align="right" valign="top"><a id="ab6d598e6e240282f50e383fe469f24d5"></a>
-<a class="el" href="structt__case.html">t_case</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>drapeau</b></td></tr>
+<tr class="memitem:ab6d598e6e240282f50e383fe469f24d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcase__jeu.html">t_case</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#ab6d598e6e240282f50e383fe469f24d5">drapeau</a></td></tr>
 <tr class="separator:ab6d598e6e240282f50e383fe469f24d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350caaf65e46a734c7408eb3ba4ed0fe"><td class="memItemLeft" align="right" valign="top"><a id="a350caaf65e46a734c7408eb3ba4ed0fe"></a>
-<a class="el" href="structt__case.html">t_case</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ec</b></td></tr>
+<tr class="memitem:a350caaf65e46a734c7408eb3ba4ed0fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcase__jeu.html">t_case</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a350caaf65e46a734c7408eb3ba4ed0fe">ec</a></td></tr>
 <tr class="separator:a350caaf65e46a734c7408eb3ba4ed0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Les fonctions prototypes de <a class="el" href="plateau_8c.html" title="Le plateau de notre jeu.">plateau.c</a>. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Tan Tony </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>2.6 </dd></dl>
-</div><h2 class="groupheader">Documentation des fonctions</h2>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="adf2dd3bfd1fefe666a6fe39bc1027989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2dd3bfd1fefe666a6fe39bc1027989">&#9670;&nbsp;</a></span>t_effet_case</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>les effets possibles d'une case. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depart</td><td>Désigne la case de départ. </td></tr>
+    <tr><td class="paramname">bleu</td><td>Fait gagner 3 pièces à un joueur. </td></tr>
+    <tr><td class="paramname">rouge</td><td>Fait perdre 3 pièces à un joueur. </td></tr>
+    <tr><td class="paramname">shop</td><td>Permet d'ouvrir une boutique et d'acheter des objets. </td></tr>
+    <tr><td class="paramname">minijeux</td><td>Déclenche un mini-jeu aléatoire. </td></tr>
+    <tr><td class="paramname">mechant</td><td>Fait apparaître "le méchant" et ce dernier donne un malus aléatoire pour tous les joueurs ou seulement un joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
 <a id="a4d04274f2add4267c33f8721cbfdcd19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d04274f2add4267c33f8721cbfdcd19">&#9670;&nbsp;</a></span>afficher_plateau()</h2>
 
@@ -226,6 +254,58 @@ Variables</h2></td></tr>
     <tr><td class="paramname">rendu</td><td>Pointeur sur un objet de type SDL_Renderer </td></tr>
     <tr><td class="paramname">liste_cases[NB_CASE]</td><td>Tableau de taille NB_CASE d'objet de type integer </td></tr>
     <tr><td class="paramname">cases[NB_CASE]</td><td>Tableau de taille NB_CASE d'objet de type SDL_Rect déjà initialisé </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06285a995ba9c99c736c63c8c37c9b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06285a995ba9c99c736c63c8c37c9b3a">&#9670;&nbsp;</a></span>ajout_droit_plat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajout_droit_plat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute à droite de l'élément courant une case avec pour effet la valeur entrée en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Objet</td><td>de type t_effet_case correspondant à un effet de case. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53eb773385bf1dcd36b7aa34f0185b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53eb773385bf1dcd36b7aa34f0185b96">&#9670;&nbsp;</a></span>ajout_gauche_plat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajout_gauche_plat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute à gauche de l'élément courant une case avec pour effet la valeur entrée en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Objet</td><td>de type t_effet_case correspondant à un effet de case. </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +358,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void effet_case_plat </td>
           <td>(</td>
-          <td class="paramtype">t_effet_case *&#160;</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a> *&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
           <td></td>
         </tr>
@@ -304,7 +384,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void modif_case_plat </td>
           <td>(</td>
-          <td class="paramtype">t_effet_case&#160;</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a>&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
           <td></td>
         </tr>
@@ -314,10 +394,41 @@ Variables</h2></td></tr>
 <p>Donne à l'effet de l'élément courant la valeur entrée en paramètre. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>enum correspondant à un effet de case. </td></tr>
+    <tr><td class="paramname">e</td><td>Objet de type t_effet_case correspondant à un effet de case. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ab6d598e6e240282f50e383fe469f24d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d598e6e240282f50e383fe469f24d5">&#9670;&nbsp;</a></span>drapeau</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcase__jeu.html">t_case</a>* drapeau</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>le drapeau de notre liste </p>
+
+</div>
+</div>
+<a id="a350caaf65e46a734c7408eb3ba4ed0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350caaf65e46a734c7408eb3ba4ed0fe">&#9670;&nbsp;</a></span>ec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcase__jeu.html">t_case</a>* ec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>l'élément courant de notre liste </p>
 
 </div>
 </div>

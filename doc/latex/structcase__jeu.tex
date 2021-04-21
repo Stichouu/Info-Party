@@ -1,10 +1,19 @@
 \hypertarget{structcase__jeu}{}\doxysection{Référence de la structure case\+\_\+jeu}
 \label{structcase__jeu}\index{case\_jeu@{case\_jeu}}
+
+
+Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur la case suivante.  
+
+
+
+
+{\ttfamily \#include $<$plateau.\+h$>$}
+
 \doxysubsection*{Attributs publics}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{structcase__jeu_afae02585e6cb37b63e384d68cea845be}\label{structcase__jeu_afae02585e6cb37b63e384d68cea845be}} 
-t\+\_\+effet\+\_\+case {\bfseries effet}
+\mbox{\hyperlink{plateau_8h_adf2dd3bfd1fefe666a6fe39bc1027989}{t\+\_\+effet\+\_\+case}} {\bfseries effet}
 \item 
 \mbox{\Hypertarget{structcase__jeu_a3406b0e6b2864d38328e2f1bc8a6362c}\label{structcase__jeu_a3406b0e6b2864d38328e2f1bc8a6362c}} 
 int {\bfseries nb\+\_\+case}
@@ -15,6 +24,22 @@ struct \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}} $\ast$ {\bfseries prece
 \mbox{\Hypertarget{structcase__jeu_ad3e673f41abd62b3f3ab4676f65581be}\label{structcase__jeu_ad3e673f41abd62b3f3ab4676f65581be}} 
 struct \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}} $\ast$ {\bfseries suiv}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur la case suivante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em effet} & Objet de type t\+\_\+effet\+\_\+case Pour l\textquotesingle{}effet de la case \\
+\hline
+{\em nb\+\_\+case} & Objet de type integer Pour le numéro de la case \\
+\hline
+{\em preced} & Pointeur sur un objet de type \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}} Pour pointer la case précedente \\
+\hline
+{\em suiv} & Pointeur sur un objet de type \mbox{\hyperlink{structcase__jeu}{case\+\_\+jeu}} Pour pointer la case suivante \\
+\hline
+\end{DoxyParams}
 
 
 La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}

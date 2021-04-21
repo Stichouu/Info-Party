@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['t_5fcase_45',['t_case',['../structt__case.html',1,'']]],
-  ['t_5fjoueur_46',['t_joueur',['../structt__joueur.html',1,'']]],
-  ['t_5fmj_47',['t_mj',['../structt__mj.html',1,'']]],
-  ['trie_48',['trie',['../partie_8c.html#ae389583e3483c08bcf1c4c95a941a7f3',1,'partie.c']]]
+  ['sdl_5fafficheruneimage_54',['SDL_AfficherUneImage',['../petite__fonction_8c.html#ad049bc7aea54b9afd7d083055f877647',1,'SDL_AfficherUneImage(SDL_Renderer *rendu, SDL_Surface *image, SDL_Texture *texture, SDL_Rect rectangle):&#160;petite_fonction.c'],['../petite__fonction_8h.html#ad049bc7aea54b9afd7d083055f877647',1,'SDL_AfficherUneImage(SDL_Renderer *rendu, SDL_Surface *image, SDL_Texture *texture, SDL_Rect rectangle):&#160;petite_fonction.c']]],
+  ['sdl_5fexitwitherror_55',['SDL_ExitWithError',['../petite__fonction_8c.html#abed124ab111ee095d48f08e2a3ea4446',1,'SDL_ExitWithError(const char *message):&#160;petite_fonction.c'],['../petite__fonction_8h.html#abed124ab111ee095d48f08e2a3ea4446',1,'SDL_ExitWithError(const char *message):&#160;petite_fonction.c']]],
+  ['suivant_5fplat_56',['suivant_plat',['../plateau_8c.html#a67c6fa9868404662e958f04de91e3b1f',1,'suivant_plat():&#160;plateau.c'],['../plateau_8h.html#a67c6fa9868404662e958f04de91e3b1f',1,'suivant_plat():&#160;plateau.c']]]
 ];

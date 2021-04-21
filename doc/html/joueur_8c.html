@@ -86,9 +86,9 @@ $(function() {
 Fonctions</h2></td></tr>
 <tr class="memitem:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="memItemLeft" align="right" valign="top"><a id="ae20d912bd5019ea22571ce4f8bbbcb47"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8c.html#ae20d912bd5019ea22571ce4f8bbbcb47">crea_joueurs</a> ()</td></tr>
-<tr class="memdesc:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialisation de 4 pointeurs sur objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> puis les regroupe dans un tableau de pointeur sur objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> afin d'initialiser les 4 potentiels joueurs de notre partie. <br /></td></tr>
+<tr class="memdesc:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialisation de 4 pointeurs sur objet de type t_joueur puis les regroupe dans un tableau de pointeur sur objet de type t_joueur afin d'initialiser les 4 potentiels joueurs de notre partie. <br /></td></tr>
 <tr class="separator:ae20d912bd5019ea22571ce4f8bbbcb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8c.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a> (<a class="el" href="structt__joueur.html">t_joueur</a> *jou)</td></tr>
+<tr class="memitem:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8c.html#a10a8aeaedd187b8d1e18a820b40d1b2f">effet_case</a> (<a class="el" href="structjoueur.html">t_joueur</a> *jou)</td></tr>
 <tr class="memdesc:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l'effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case).  <a href="joueur_8c.html#a10a8aeaedd187b8d1e18a820b40d1b2f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a10a8aeaedd187b8d1e18a820b40d1b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab943ad925be00a5e4b5f73a391600f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joueur_8c.html#ab943ad925be00a5e4b5f73a391600f37">afficher_joueur_case</a> (SDL_Renderer *rendu, SDL_Rect cases[NB_CASE], int case_courant[<a class="el" href="joueur_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8">NB_JOUEURS</a>], int joueurs)</td></tr>
@@ -301,7 +301,7 @@ Tan Tony </dd></dl>
         <tr>
           <td class="memname">void effet_case </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt__joueur.html">t_joueur</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">t_joueur</a> *&#160;</td>
           <td class="paramname"><em>jou</em></td><td>)</td>
           <td></td>
         </tr>
@@ -311,7 +311,7 @@ Tan Tony </dd></dl>
 <p>La fonction affiche sur le terminal la position du joueur (prit en paramètre) ainsi que l'effet de la case et effectue des changements par rapport au type de la case en question (le nombre de pièce qui diminue ou augmente sur tel case). </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">jou</td><td>Pointeur sur un objet de type <a class="el" href="structt__joueur.html" title="Objet joueur. Il prend en compte un objet t_case,3 objets de type integer pour le nb de pièces,...">t_joueur</a> </td></tr>
+    <tr><td class="paramname">jou</td><td>Pointeur sur un objet de type t_joueur </td></tr>
   </table>
   </dd>
 </dl>

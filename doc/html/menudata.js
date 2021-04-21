@@ -34,10 +34,12 @@ var menudata={children:[
 {text:"Tout",url:"globals.html",children:[
 {text:"a",url:"globals.html#index_a"},
 {text:"c",url:"globals.html#index_c"},
+{text:"d",url:"globals.html#index_d"},
 {text:"e",url:"globals.html#index_e"},
 {text:"f",url:"globals.html#index_f"},
 {text:"h",url:"globals.html#index_h"},
 {text:"i",url:"globals.html#index_i"},
+{text:"j",url:"globals.html#index_j"},
 {text:"l",url:"globals.html#index_l"},
 {text:"m",url:"globals.html#index_m"},
 {text:"n",url:"globals.html#index_n"},
@@ -60,4 +62,5 @@ var menudata={children:[
 {text:"t",url:"globals_func.html#index_t"},
 {text:"u",url:"globals_func.html#index_u"}]},
 {text:"Variables",url:"globals_vars.html"},
+{text:"Énumérations",url:"globals_enum.html"},
 {text:"Macros",url:"globals_defs.html"}]}]}]}

@@ -68,11 +68,16 @@ $(function() {
 <div class="title">Référence de la structure case_jeu</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur la case suivante.  
+ <a href="structcase__jeu.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="plateau_8h_source.html">plateau.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Attributs publics</h2></td></tr>
 <tr class="memitem:afae02585e6cb37b63e384d68cea845be"><td class="memItemLeft" align="right" valign="top"><a id="afae02585e6cb37b63e384d68cea845be"></a>
-t_effet_case&#160;</td><td class="memItemRight" valign="bottom"><b>effet</b></td></tr>
+<a class="el" href="plateau_8h.html#adf2dd3bfd1fefe666a6fe39bc1027989">t_effet_case</a>&#160;</td><td class="memItemRight" valign="bottom"><b>effet</b></td></tr>
 <tr class="separator:afae02585e6cb37b63e384d68cea845be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3406b0e6b2864d38328e2f1bc8a6362c"><td class="memItemLeft" align="right" valign="top"><a id="a3406b0e6b2864d38328e2f1bc8a6362c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>nb_case</b></td></tr>
@@ -84,7 +89,18 @@ struct <a class="el" href="structcase__jeu.html">case_jeu</a> *&#160;</td><td cl
 struct <a class="el" href="structcase__jeu.html">case_jeu</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>suiv</b></td></tr>
 <tr class="separator:ad3e673f41abd62b3f3ab4676f65581be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur la case suivante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effet</td><td>Objet de type t_effet_case Pour l'effet de la case </td></tr>
+    <tr><td class="paramname">nb_case</td><td>Objet de type integer Pour le numéro de la case </td></tr>
+    <tr><td class="paramname">preced</td><td>Pointeur sur un objet de type <a class="el" href="structcase__jeu.html" title="Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur ...">case_jeu</a> Pour pointer la case précedente </td></tr>
+    <tr><td class="paramname">suiv</td><td>Pointeur sur un objet de type <a class="el" href="structcase__jeu.html" title="Une case possède un effet,le numéro de la case,un pointeur sur la case précédente et un pointeur sur ...">case_jeu</a> Pour pointer la case suivante </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
 <li>lib/<a class="el" href="plateau_8h_source.html">plateau.h</a></li>
 </ul>
 </div><!-- contents -->
