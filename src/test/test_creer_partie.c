@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <SDL.h>
-#include <SDL_image.h>
-#include "../lib/petite_fonction.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include "../../lib/petite_fonction.h"
 int main(int argc,char ** argv){
     SDL_Window *fenetre=NULL;
     int quitter=0;

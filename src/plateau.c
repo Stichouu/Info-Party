@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "../lib/plateau.h"
 #include "../lib/petite_fonction.h"
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 /**
 * \file plateau.c
 * \author Tan Tony

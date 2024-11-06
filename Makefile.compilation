@@ -1,37 +1,26 @@
-#
-# Option compilation
-#
+# Extension de l'exécutable en fonction du système d'exploitation
+EXTAPP =
 
- CCOBJ=gcc -c
- CCLNK=gcc
+# Cibles supplémentaires pour le make all en fonction du système d'exploitation
+CIBLE_ARCH =
 
-# Valeurs possibles : yes , no
-DEBUG=yes
-# Valeurs possibles : apple , linux
-ARCH=apple
+# Paramètres pour la commande clean en fonction du système d'exploitation
+PARAM_CLEAN =
 
-ifeq ($(DEBUG),yes)
-	 CFLAGS=-Wall -ansi -g -D_DEBUG_
+# Paramètres pour l'initialisation des dossiers
+PARAM_INIT = 
+
+# Détecte le système d'exploitation
+ifeq ($(ARCH),win)
+    # Compilation sous Windows
+    LDFLAGS = -I./include -Llib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lm
+    EXTAPP = .exe
+    PARAM_CLEAN = -f
+    PARAM_INIT = -p
 else
-	 CFLAGS=-Wall -ansi
-endif
-
-
-ifeq ($(ARCH),apple)
-
-	ifeq ($(DEBUG),yes)
-	      CFLAGS=-Wall -g -D_DEBUG_ -D_APPLE_
-	else
-	      CFLAGS=-Wall -D_APPLE_
-	endif
-endif
-
-ifeq ($(ARCH),linux)
-	LIBMATH=-lm
-
-	ifeq ($(DEBUG),yes)
-	      CFLAGS=-Wall -ansi -g -D_DEBUG_ -D_LINUX_
-	else
-	      CFLAGS=-Wall -ansi -D_LINUX_
-	endif
+    # Compilation sous Linux
+    LDFLAGS = -I./include -Llib -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lm 
+    CIBLE_ARCH = init
+    PARAM_CLEAN = -f
+    PARAM_INIT = -p
 endif

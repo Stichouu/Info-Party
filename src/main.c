@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 #include "../lib/plateau.h"
 #include "../lib/joueur.h"
 #include "../lib/partie.h"
@@ -32,7 +32,7 @@ int main(int argc, char ** argv){
   SDL_Rect cases[NB_CASE];
   SDL_Window *fenetre=NULL;
   SDL_Renderer *rendu= NULL;
-  Uint32 affich_fenetre=SDL_WINDOW_MAXIMIZED;
+  Uint32 affich_fenetre=SDL_WINDOW_FULLSCREEN;
   if(SDL_Init(SDL_INIT_VIDEO) != 0) //Lancement SDL
     SDL_ExitWithError("Initialisation SDL");
   //Création de la fenêtre

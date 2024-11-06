@@ -3,8 +3,8 @@
 #include "../lib/joueur.h"
 #include "../lib/petite_fonction.h"
 #include "../lib/partie.h"
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 /**
 * \file joueur.c
 * \author Cyprien Pennachi
